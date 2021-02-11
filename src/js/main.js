@@ -51,7 +51,9 @@ if (location.host === 'github.com') {
   const detailsElement = document.createElement('details');
   detailsElement.setAttribute('class', 'details-overlay details-reset position-relative d-block');
   detailsElement.innerHTML = githubHtml;
-  menuElement.appendChild(detailsElement);
+  if (menuElement) {
+    menuElement.appendChild(detailsElement);
+  }
 } else if (location.host === 'gitlab.com') {
   // TODO
 }
