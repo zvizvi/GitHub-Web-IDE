@@ -1,11 +1,17 @@
 {
-  "manifest_version": 2,
-  "update_url": "https://clients2.google.com/service/update2/crx",
   "name": "Github Web IDE",
+  "description": "Open Github repositories in web online web IDE",
+  "manifest_version": 3,
+  "update_url": "https://clients2.google.com/service/update2/crx",
   "version": "1.0.0",
   "author": "zvizvi5@outlook.com",
-  "browser_action": {
-    "default_icon": "img/icon16.png"
+  "action": {
+    "default_icon": {
+      "16": "img/icon16.png",
+      "32": "img/icon32.png",
+      "48": "img/icon48.png",
+      "128": "img/icon128.png"
+    }
   },
   "content_scripts": [
     {
@@ -26,6 +32,7 @@
     "72": "img/icon72.png",
     "64": "img/icon64.png",
     "48": "img/icon48.png",
+    "32": "img/icon32.png",
     "24": "img/icon24.png",
     "16": "img/icon16.png"
   }
