@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/4354421/107630444-3700d000-6c6c-11eb-8f75-7160d0722ce4.png)
 # Github Web IDE
 
-Open Github repositories in web online web IDE, Chrome Extension.
+Open Github repositories in online web IDE, Chrome Extension.
 
 * CodeSandbox
 * GitHub1s
