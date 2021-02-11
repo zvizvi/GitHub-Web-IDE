@@ -8,6 +8,11 @@ Open Github repositories in web online web IDE, Chrome Extension.
 * Repl.it
 * Gitpod
 
+
+#### Goal
+- [x]  Github
+- [ ] Gitlab
+
 ![image](https://user-images.githubusercontent.com/4354421/107629534-eb99f200-6c6a-11eb-9bd5-cbb33b3e66fb.png)
 
 
