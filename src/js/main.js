@@ -47,13 +47,21 @@ const githubHtml = `<summary role="button" type="button" class="btn ml-2">
 </div> `;
 
 if (location.host === 'github.com') {
+  addGithubSelectMenu();
+} else if (location.host === 'gitlab.com') {
+  addGitlabSelectMenu();
+}
+
+function addGithubSelectMenu () {
   const menuElement = document.querySelector('#repo-content-pjax-container .file-navigation');
   const detailsElement = document.createElement('details');
-  detailsElement.setAttribute('class', 'details-overlay details-reset position-relative d-block');
+  detailsElement.setAttribute('class', 'details-overlay details-reset position-relative d-block open-in-web-ide');
   detailsElement.innerHTML = githubHtml;
-  if (menuElement) {
+  if (menuElement && !menuElement.querySelector('.open-in-web-ide')) {
     menuElement.appendChild(detailsElement);
   }
-} else if (location.host === 'gitlab.com') {
+}
+
+function addGitlabSelectMenu () {
   // TODO
 }
