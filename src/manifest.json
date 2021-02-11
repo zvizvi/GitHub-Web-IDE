@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "name": "Github Web IDE",
+  "version": "1.0.0",
+  "author": "zvizvi5@outlook.com",
+  "browser_action": {
+    "default_icon": "img/icon16.png"
+  },
+  "content_scripts": [
+    {
+      "all_frames": false,
+      "matches": [
+        "https://github.com/*",
+        "https://gitlab.com/*"
+      ],
+      "js": [
+        "js/main.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "128": "img/icon128.png",
+    "96": "img/icon96.png",
+    "72": "img/icon72.png",
+    "64": "img/icon64.png",
+    "48": "img/icon48.png",
+    "24": "img/icon24.png",
+    "16": "img/icon16.png"
+  }
+}
