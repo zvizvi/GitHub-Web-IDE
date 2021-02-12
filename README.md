@@ -17,5 +17,8 @@ Services currently supported:
 ![image](https://user-images.githubusercontent.com/4354421/107629534-eb99f200-6c6a-11eb-9bd5-cbb33b3e66fb.png)
 
 
+[firefox_link]: https://addons.mozilla.org/firefox/addon/github-web-ide
+[firefox_badge]: https://user-images.githubusercontent.com/4354421/107757173-e356bb00-6d2d-11eb-9410-b080aae63758.png
+
 ![get-chrome-ext](https://user-images.githubusercontent.com/4354421/107629893-6cf18480-6c6b-11eb-8bc3-2eedf8dc2107.png)
-![get-firefox-addon](https://user-images.githubusercontent.com/4354421/107757173-e356bb00-6d2d-11eb-9410-b080aae63758.png)
+[![get-firefox-addon][firefox_badge]][firefox_link]
