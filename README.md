@@ -1,7 +1,8 @@
 ![image](https://user-images.githubusercontent.com/4354421/107630444-3700d000-6c6c-11eb-8f75-7160d0722ce4.png)
 # Github Web IDE
 
-Open Github repositories in online web IDE, Chrome Extension.
+This extension adds to any Github repository a new drop down menu which offers links to a number of online services that allow viewing the source code of the repository in an IDE like interface.
+Services currently supported:
 
 * CodeSandbox
 * GitHub1s
