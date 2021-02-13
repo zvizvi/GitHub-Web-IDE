@@ -1,9 +1,9 @@
 {
-  "name": "Github open in Web IDE",
+  "name": "Github Web IDE",
   "description": "Open Github repositories in online web IDE",
   "manifest_version": 3,
   "update_url": "https://clients2.google.com/service/update2/crx",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "zvizvi5@outlook.com",
   "action": {
     "default_icon": {
@@ -17,8 +17,7 @@
     {
       "all_frames": false,
       "matches": [
-        "https://github.com/*",
-        "https://gitlab.com/*"
+        "https://github.com/*"
       ],
       "js": [
         "js/main.js"
