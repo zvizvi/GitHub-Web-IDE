@@ -34,6 +34,7 @@ const githubHtml = `<summary role="button" type="button" class="btn ml-2">
     Open In Web IDE
     <span class="dropdown-caret ml-1"></span>
   </span>
+  <span class="d-inline-block d-md-none">IDE</span>
 </summary>
 <div>
   <ul class="dropdown-menu dropdown-menu-sw">
