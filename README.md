@@ -2,7 +2,7 @@
 # Github Web IDE
 
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/adjiklnjodbiaioggfpbpkhbfcnhgkfe.svg)][chrome_link]
-[![Firefox Addons](https://img.shields.io/static/v1?label=firefox%20add%20on&message=v.1.0.0&color=blue&style=flat)][firefox_link]
+[![Firefox Addons](https://img.shields.io/amo/v/github-web-ide.svg)][firefox_link]
 
 
 This extension adds to any Github repository a new drop down menu which offers links to a number of online services that allow viewing the source code of the repository in an IDE like interface.
