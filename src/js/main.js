@@ -23,13 +23,13 @@ const ideWebsitesList = [
     title: 'Gitpod',
     baseurl: 'https://gitpod.io/#https://github.com/',
     icon: '<svg width="16" height="16" viewBox="0 0 32 32" class="mr-2" style="vertical-align:sub"><path d="M4.802 22.667v-12.531l-2.802-1.604v15.734l13.599 7.734v-3.198zM15.599 25.599v-9.198l-8-4.667v9.333zM16 3.198l10.802 6.271 2.797-1.604-13.599-7.865-13.599 7.865 2.797 1.604zM24 11.068l-8-4.667-8 4.667 8 4.667zM16.401 25.734l8-4.667v-3.203l-5.469 3.203v-3.203l8.266-4.797v9.599l-10.797 6.135v3.198l13.599-7.734v-15.734l-13.599 7.87z"></path></svg>'
-  },
-  {
-    title: 'VSCode',
-    baseurl: 'vscode://vscode.git/clone?url=',
-    icon: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16pt" height="16pt" viewBox="0 0 16 16" version="1.1"><defs><filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/></filter><image id="image32" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAA+UlEQVQ4jWNgIBL8/61g9/9P5d3/vzPX/f/1yoRYfRDNf2z9//+R+f7/D/N/OP6tvYMog/7/0kr+/4fnD4pmODb+AFH0eiEvdmc7V/z/w/YPu2YIZvj/61UGxIbSKf9vF7IzMDAw/GdgZvz/e0o/hobf/HvRDWT4/6f0HkLBidP/f+xU+/9HfgmqZs6//3+/b/q/ipkZ04Cf1pr//6Q9QlGMotnj1f/fK9wQAYpmAAMDA8P/r5ek/v9ecxHTyWdP/f/+WwE1RlANYCIpPrGGNKVeoDwQKY1GBgYGhv+vnHnITkgEw4iYpEzQEEoyE8I7Cnb//xTeR8/OAF3n1dG2VQFPAAAAAElFTkSuQmCC"/><mask id="mask0">  <g filter="url(#alpha)"><use xlink:href="#image32"/>  </g></mask><image id="image14" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAB1klEQVQ4jcWSTU8TURSGnzv3dmDa0kqIItKm6qZpGkeGgAsDsWgwSMTgB//Af6A/wLj2L7gzJhJdGdFqXLgwEaiaUDC4KJT4HV1oQ8aUaacuZjqZEEF2nuW55z7nfc858L9DAEmgBbhAA2gCzl4BGtBFbrwXiAMG0AHoewVIrt67ztDMLNblPiqlEvYP11cmfDX/AIxfu4MmE+hRE3NyDGXMs7FYC9UI394OgIi+xiGzgKbFkeoA6YEZjpz4xtLDtRCAndRIqqUmdu0Jh4dGkKoHIXSSfRMMXNzP6osF6rXWbpYkEOHryia/NoocHRlGRg4Cgo7YcazpMZSxsJsl6Sccvq/bfCgXyRaOofSM96p6SZnTpKwqy3MfQ4AAIvF23wJa1D47rDx6TP5cGj2a88o1g+7UFOZUgvJciUY97EBI/3OT9jHVbZf5+88xJxN0xq2ga2fXIINXTuI6r/hUtvFuSMkQrT0gBxpNFu++JHf2N9F9o8EmlN5PZvgS6XyF5eKXtgK2QdxAzevZt2QLP4n1nPI7gqYZdGfOk58Q1Der2wGELHnx5sF70tY6yf4zCJSf1RCai9tYFX8BEBRBFIgBCS7cHCV7+gZbdoV3T2/z7NYSsPUH26qMs+xc+EUAAAAASUVORK5CYII="/><image id="image25" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAApElEQVQ4jWNmIA6wMjAw8ArGTTQVTZo5h1lU7vePSzuZGRgYRBmJNICJgYGBm4GBgVt+zofnDAwMDH+/fTj29cTKacQawAg1gAdmAAMDA8P/f3+/MBFpAAMDA8NfDFOZmHmINeA/EkYBpLgAKxg1YCgZwIiEyXYBM7rA/39/v7CQ6AI4gGUmYg1gZmBgYBKMm6jy7+vH3V/OrJ33fnHRdQYGhr8A3NsxHBzFTXAAAAAASUVORK5CYII="/><mask id="mask1">  <g filter="url(#alpha)"><rect x="0" y="0" width="16" height="16" style="fill:rgb(0%,0%,0%);fill-opacity:0.25098;stroke:none;"/>  </g></mask><linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="127.844" y1="0.659988" x2="127.844" y2="255.34" gradientTransform="matrix(0.0625,0,0,0.0625,0,0)"><stop offset="0" style="stop-color:rgb(100%,100%,100%);stop-opacity:1;"/><stop offset="1" style="stop-color:rgb(100%,100%,100%);stop-opacity:0;"/></linearGradient><clipPath id="clip2">  <rect x="0" y="0" width="16" height="16"/></clipPath><g id="surface28" clip-path="url(#clip2)"><path style=" stroke:none;fill-rule:evenodd;fill:url(#linear0);" d="M 11.335938 15.890625 C 11.589844 15.988281 11.875 15.984375 12.128906 15.859375 L 15.425781 14.273438 C 15.769531 14.109375 15.992188 13.757812 15.992188 13.375 L 15.992188 2.625 C 15.992188 2.242188 15.769531 1.890625 15.425781 1.726562 L 12.128906 0.140625 C 11.796875 -0.0195312 11.40625 0.0195312 11.113281 0.230469 C 11.070312 0.261719 11.03125 0.296875 10.992188 0.332031 L 4.6875 6.085938 L 1.941406 4 C 1.683594 3.808594 1.328125 3.824219 1.089844 4.039062 L 0.207031 4.839844 C -0.0820312 5.105469 -0.0820312 5.5625 0.207031 5.828125 L 2.589844 8 L 0.207031 10.171875 C -0.0820312 10.4375 -0.0820312 10.894531 0.207031 11.160156 L 1.089844 11.960938 C 1.328125 12.175781 1.683594 12.191406 1.941406 12 L 4.6875 9.914062 L 10.992188 15.667969 C 11.09375 15.765625 11.210938 15.839844 11.335938 15.890625 Z M 11.992188 4.367188 L 7.207031 8 L 11.992188 11.632812 Z M 11.992188 4.367188 "/></g><clipPath id="clip1">  <rect x="0" y="0" width="16" height="16"/></clipPath><g id="surface31" clip-path="url(#clip1)"><path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,39.607843%,66.27451%);fill-opacity:1;" d="M 15.433594 1.726562 L 12.136719 0.140625 C 11.753906 -0.0429688 11.300781 0.0351562 11 0.332031 L 0.207031 10.171875 C -0.0820312 10.4375 -0.0820312 10.894531 0.207031 11.160156 L 1.089844 11.960938 C 1.328125 12.175781 1.683594 12.191406 1.941406 12 L 14.9375 2.140625 C 15.375 1.808594 16 2.121094 16 2.667969 L 16 2.628906 C 16 2.246094 15.78125 1.894531 15.433594 1.726562 Z M 15.433594 1.726562 "/><use xlink:href="#image14"/><use xlink:href="#image25"/><use xlink:href="#surface28" mask="url(#mask1)"/></g></defs><g id="surface1"><use xlink:href="#surface31" mask="url(#mask0)"/></g></svg>'
   }
 ];
+const vsCodeItem = {
+  title: 'VSCode',
+  baseurl: 'vscode://vscode.git/clone?url=https://github.com/',
+  icon: '<svg width="16" height="16" viewBox="0 0 276 276" class="mr-2" style="vertical-align:sub"><g><path d="M246.94 27.6383L194.193 2.24138C188.088 -0.698302 180.791 0.541721 175.999 5.33332L3.32371 162.773C-1.32082 167.008 -1.31548 174.32 3.33523 178.548L17.4399 191.37C21.2421 194.827 26.9682 195.081 31.0619 191.976L239.003 34.2269C245.979 28.9347 255.999 33.9103 255.999 42.6667V42.0543C255.999 35.9078 252.478 30.3047 246.94 27.6383Z" fill="var(--color-text-primary)"/><g><path d="M246.94 228.362L194.193 253.759C188.088 256.698 180.791 255.458 175.999 250.667L3.32371 93.2272C-1.32082 88.9925 -1.31548 81.6802 3.33523 77.4523L17.4399 64.6298C21.2421 61.1733 26.9682 60.9188 31.0619 64.0245L239.003 221.773C245.979 227.065 255.999 222.09 255.999 213.333V213.946C255.999 220.092 252.478 225.695 246.94 228.362Z" fill="var(--color-text-primary)"/></g><g><path d="M194.196 253.763C188.089 256.7 180.792 255.459 176 250.667C181.904 256.571 192 252.389 192 244.039V11.9606C192 3.61057 181.904 -0.571175 176 5.33321C180.792 0.541166 188.089 -0.700607 194.196 2.23648L246.934 27.5985C252.476 30.2635 256 35.8686 256 42.0178V213.983C256 220.132 252.476 225.737 246.934 228.402L194.196 253.763Z" fill="var(--color-text-primary)"/></g></g></svg>'
+};
 
 const currentUrlPath = location.pathname.split('/').slice(1, 3).join('/');
 // const hasPackageJson = [...document.querySelectorAll('.Details > .js-active-navigation-container > .Box-row')].find((el) => el.querySelector('a.js-navigation-open').innerText === 'package.json');
@@ -45,10 +45,14 @@ const githubHtml = `<summary role="button" type="button" class="btn ml-2">
   <ul class="dropdown-menu dropdown-menu-sw">
     ${ideWebsitesList.map((item) =>
   /* item.title === 'StackBlitz' && !hasPackageJson) ? '' : */
-  `<li><a href='${item.baseurl}${currentUrlPath}' class='dropdown-item' target='_blank' rel='noopener noreferrer'>
+  `<li data-toggle-for="open-in-web-ide"><a href="${item.baseurl}${currentUrlPath}" class="dropdown-item" target="_blank" rel="noopener noreferrer">
       ${item.icon}
       ${item.title}
     </a></li>`).join('')}
+    <li class="border-top" data-toggle-for="open-in-web-ide"><a href="${vsCodeItem.baseurl}${currentUrlPath}.git" class="dropdown-item" rel="noopener noreferrer">
+    ${vsCodeItem.icon}
+    ${vsCodeItem.title}
+    </a></li>
   </ul>
 </div> `;
 
@@ -61,9 +65,10 @@ if (location.host === 'github.com') {
 function addGithubSelectMenu () {
   const menuElement = document.querySelector('#repo-content-pjax-container .file-navigation');
   const detailsElement = document.createElement('details');
-  detailsElement.setAttribute('class', 'details-overlay details-reset position-relative d-block open-in-web-ide');
+  detailsElement.setAttribute('class', 'details-overlay details-reset position-relative d-block');
+  detailsElement.setAttribute('id', 'open-in-web-ide');
   detailsElement.innerHTML = githubHtml;
-  if (menuElement && !menuElement.querySelector('.open-in-web-ide')) {
+  if (menuElement && !menuElement.querySelector('#open-in-web-ide')) {
     menuElement.appendChild(detailsElement);
   }
 }
