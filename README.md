@@ -12,6 +12,7 @@ Services currently supported:
 * GitHub1s
 * Repl.it
 * Gitpod
+* *New added:*  Clone in VSCode (locally)
 
 
 ### Goal
@@ -19,7 +20,7 @@ Services currently supported:
 - [ ] Gitlab
 
 
-![image](https://user-images.githubusercontent.com/4354421/107629534-eb99f200-6c6a-11eb-9bd5-cbb33b3e66fb.png)
+![image](https://user-images.githubusercontent.com/4354421/107879967-a123aa00-6ee4-11eb-9582-662998618ed1.png)
 
 
 ### Download
