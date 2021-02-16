@@ -77,9 +77,23 @@ function addGithubSelectMenu () {
   detailsElement.setAttribute('class', 'details-overlay details-reset position-relative d-block');
   detailsElement.setAttribute('id', 'open-in-web-ide');
   detailsElement.innerHTML = githubHtml;
+
+  // Fix Commits page style
+  fixCommitsPageStyle(menuElement);
+
   menuElement.appendChild(detailsElement);
 }
 
 function addGitlabSelectMenu () {
   // TODO
+}
+
+function fixCommitsPageStyle (menuElement) {
+  const commitsPageNavigator = document.querySelector('#repo-content-pjax-container > .file-navigation');
+  if (commitsPageNavigator) {
+    commitsPageNavigator.classList.add('d-flex');
+    const divFlexElement = document.createElement('div');
+    divFlexElement.setAttribute('class', 'flex-auto');
+    menuElement.appendChild(divFlexElement);
+  }
 }
