@@ -3,7 +3,8 @@
   "description": "Open Github repositories in online web IDE",
   "manifest_version": 3,
   "update_url": "https://clients2.google.com/service/update2/crx",
-  "version": "1.0.4",
+  "homepage_url": "https://github.com/zvizvi/Github-Web-IDE",
+  "version": "1.0.5",
   "author": "zvizvi5@outlook.com",
   "action": {
     "default_icon": {
