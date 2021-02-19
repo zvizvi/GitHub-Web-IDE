@@ -12,6 +12,7 @@ Services currently supported:
 * GitHub1s
 * Repl.it
 * Gitpod
+* Sourcegraph
 * *New added:*  Clone in VSCode (locally)
 
 
