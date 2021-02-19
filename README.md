@@ -16,6 +16,11 @@ Services currently supported:
 * *New added:*  Clone in VSCode (locally)
 
 
+### What's changed?
+* v1.0.7 Sourcegraph link added.
+* v1.0.4 Clone in VSCode option added.
+
+
 ### Goal
 - [x] Github
 - [ ] Gitlab
