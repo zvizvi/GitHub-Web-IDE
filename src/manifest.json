@@ -4,7 +4,7 @@
   "manifest_version": 3,
   "update_url": "https://clients2.google.com/service/update2/crx",
   "homepage_url": "https://github.com/zvizvi/Github-Web-IDE",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "zvizvi5@outlook.com",
   "action": {
     "default_icon": {
@@ -18,7 +18,8 @@
     {
       "all_frames": false,
       "matches": [
-        "https://github.com/*"
+        "https://github.com/*",
+        "https://gitlab.com/*"
       ],
       "js": [
         "js/main.js"
