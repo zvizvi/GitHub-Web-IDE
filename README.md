@@ -15,6 +15,7 @@ Services currently supported:
 * Gitpod
 * Glitch
 * Sourcegraph
+* Gitlab.Surf
 * *New added:*  Clone in VSCode (locally)
 
 
@@ -24,12 +25,10 @@ Services currently supported:
 * v1.0.4 Clone in VSCode option added.
 
 
-### Goal
-- [x] Github
-- [ ] Gitlab
-
-
+### Github
 ![image](https://user-images.githubusercontent.com/4354421/107879967-a123aa00-6ee4-11eb-9582-662998618ed1.png)
+### Gitlab
+![image](https://user-images.githubusercontent.com/4354421/109164571-45c6a700-7783-11eb-8da0-61e3f4c8d588.png)
 
 
 ### Download
