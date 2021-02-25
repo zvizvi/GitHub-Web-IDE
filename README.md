@@ -13,11 +13,13 @@ Services currently supported:
 * GitHub1s
 * Repl.it
 * Gitpod
+* Glitch
 * Sourcegraph
 * *New added:*  Clone in VSCode (locally)
 
 
 ### What's changed?
+* v1.0.8 Gitlab support, Glitch link added.
 * v1.0.7 Sourcegraph link added.
 * v1.0.4 Clone in VSCode option added.
 
