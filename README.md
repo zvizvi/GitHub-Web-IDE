@@ -20,6 +20,8 @@ Services currently supported:
 
 
 ### What's changed?
+* v1.0.11 Dark mode support.
+* v1.0.10 Open current selected branch.
 * v1.0.8 Gitlab support, Glitch link added.
 * v1.0.7 Sourcegraph link added.
 * v1.0.4 Clone in VSCode option added.
