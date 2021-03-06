@@ -66,38 +66,13 @@ const vsCodeItem = {
 const repoUrlPath = '/' + location.pathname.split('/').slice(1, 3).join('/');
 // const hasPackageJson = [...document.querySelectorAll('.Details > .js-active-navigation-container > .Box-row')].find((el) => el.querySelector('a.js-navigation-open').innerText === 'package.json');
 
-const githubHtml = `<summary role="button" type="button" class="btn ml-2">
-  <span class="d-none d-md-flex flex-items-center">
-    Open In Web IDE
-    <span class="dropdown-caret ml-1"></span>
-  </span>
-  <span class="d-inline-block d-md-none">IDE</span>
-</summary>
-<div>
-  <ul class="dropdown-menu dropdown-menu-sw">
-    ${ideWebsitesList.filter((item) => item.platforms.includes(platform)).map((item) =>
-  /* item.title === 'StackBlitz' && !hasPackageJson) ? '' : */
-  `<li data-toggle-for="open-in-web-ide"><a href="${item.baseurl}${item.type === 'repoName' ? repoUrlPath : location.pathname}" class="dropdown-item" target="_blank" rel="noopener noreferrer">
-      ${item.icon}
-      ${item.title}
-    </a></li>`).join('')}
-    <li class="border-top d-none d-md-flex" data-toggle-for="open-in-web-ide"><a href="${vsCodeItem.baseurl}${repoUrlPath}.git" class="dropdown-item" rel="noopener noreferrer">
-    ${vsCodeItem.icon}
-    ${vsCodeItem.title}
-    </a></li>
-  </ul>
-</div> `;
-
-const gitlabHtml = `${ideWebsitesList.filter((item) => item.platforms.includes(platform)).map((item) =>
-  `<li data-toggle-for="open-in-web-ide"><a href="${item.baseurl}${item.type === 'repoName' ? repoUrlPath : location.pathname}" class="dropdown-item" target="_blank">
-      ${item.icon}
-      ${item.title}
-    </a></li>`).join('')}`;
-
 switch (platform) {
   case 'github':
     addGithubSelectMenu();
-    document.addEventListener('pjax:end', () => addGithubSelectMenu());
+    document.addEventListener('pjax:end', () => {
+      document.getElementById('open-in-web-ide')?.remove();
+      addGithubSelectMenu();
+    });
     break;
   case 'gitlab':
     addGitlabSelectMenu();
@@ -112,6 +87,29 @@ function addGithubSelectMenu () {
   if (!menuElement || menuElement.querySelector('#open-in-web-ide')) {
     return;
   }
+
+  const githubHtml = `<summary role="button" type="button" class="btn ml-2">
+    <span class="d-none d-md-flex flex-items-center">
+      Open In Web IDE
+      <span class="dropdown-caret ml-1"></span>
+    </span>
+    <span class="d-inline-block d-md-none">IDE</span>
+  </summary>
+  <div>
+    <ul class="dropdown-menu dropdown-menu-sw">
+      ${ideWebsitesList.filter((item) => item.platforms.includes(platform)).map((item) =>
+    /* item.title === 'StackBlitz' && !hasPackageJson) ? '' : */
+    `<li data-toggle-for="open-in-web-ide"><a href="${item.baseurl}${item.type === 'repoName' ? repoUrlPath : location.pathname.replace(/\/tree\/master$/, '')}" class="dropdown-item" target="_blank" rel="noopener noreferrer">
+        ${item.icon}
+        ${item.title}
+      </a></li>`).join('')}
+      <li class="border-top d-none d-md-flex" data-toggle-for="open-in-web-ide"><a href="${vsCodeItem.baseurl}${repoUrlPath}.git" class="dropdown-item" rel="noopener noreferrer">
+        ${vsCodeItem.icon}
+        ${vsCodeItem.title}
+      </a></li>
+    </ul>
+  </div> `;
+
   const detailsElement = document.createElement('details');
   detailsElement.setAttribute('class', 'details-overlay details-reset position-relative d-block');
   detailsElement.setAttribute('id', 'open-in-web-ide');
@@ -128,6 +126,13 @@ function addGitlabSelectMenu () {
   if (!webIDEDropdown || document.querySelector('#open-in-web-ide')) {
     return;
   }
+
+  const gitlabHtml = `${ideWebsitesList.filter((item) => item.platforms.includes(platform)).map((item) =>
+    `<li data-toggle-for="open-in-web-ide"><a href="${item.baseurl}${item.type === 'repoName' ? repoUrlPath : location.pathname}" class="dropdown-item" target="_blank">
+      ${item.icon}
+      ${item.title}
+    </a></li>`).join('')}`;
+
   webIDEDropdown.setAttribute('id', '#open-in-web-ide');
   webIDEDropdown.innerHTML = gitlabHtml;
 }
