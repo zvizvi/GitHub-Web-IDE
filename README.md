@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/4354421/107630444-3700d000-6c6c-11eb-8f75-7160d0722ce4.png)
+![GithubWebIDE](https://raw.githubusercontent.com/zvizvi/Github-Web-IDE/master/src/img/logo.svg)
 # Github Web IDE
 
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/adjiklnjodbiaioggfpbpkhbfcnhgkfe.svg)][chrome_link]
