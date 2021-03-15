@@ -28,13 +28,6 @@ const ideWebsitesList = [
     type: 'repoName',
     icon: '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 900 900" class="mr-2" style="vertical-align:sub"><g fill-rule="nonzero" stroke="none" stroke-width="1"><path fill="var(--color-text-primary)" d="M895.5 408.05c1.23 13.58 2.08 27.28 2.08 41.19 0-13.91-.85-27.6-2.08-41.19z"></path><path fill="var(--color-text-primary)" d="M230 405.68S105.25 865.32 605.26 869.32c156.88-58.4 272.48-201.58 290-374.2 1.21-11.94 1.57-24.12 1.84-36.32.05-3.21.48-6.33.48-9.56 0-13.9-.85-27.61-2.08-41.19C763.4 928.08 179 724.39 230 405.68z"></path><path fill="var(--color-text-primary)" d="M488.54 235.07S23 105.06 30.16 612.68a449.86 449.86 0 00108.49 162.17c2 1.89 4.07 3.68 6.09 5.54a450.17 450.17 0 0042.54 34.67c2.31 1.65 4.48 3.47 6.8 5.08a446.74 446.74 0 0049.11 29.16c4.93 2.54 10 4.86 15 7.23a443.91 443.91 0 0044.85 18.2c3.75 1.28 7.33 2.88 11.13 4.07A444.68 444.68 0 00370 892c5.71 1 11.48 1.84 17.26 2.64a450 450 0 0059.11 4.59c.76 0 1.49.12 2.25.12 14.92 0 29.65-.8 44.18-2.23-522.34-124.57-323.8-708.65-4.26-662.05z"></path><path fill="var(--color-text-primary)" d="M670 475.8S780.14 11.46 284.36 32.2C118.11 97.87.42 259.63.42 449.2a451.1 451.1 0 004.61 61C109.37-15.14 703.8 155 670 475.8z"></path><path fill="var(--color-text-primary)" d="M431.95 675.62S898.3 736.5 869.11 293.11C805.64 122.44 641.76.62 449 .62a450.24 450.24 0 00-81.35 7.73c519.64 63.79 384.58 671.81 64.3 667.27z"></path><path fill="var(--color-text-primary)" d="M578.46 449.25c0 50.824-30.618 96.643-77.575 116.09-46.957 19.445-101.005 8.688-136.937-27.256-35.933-35.944-46.673-89.995-27.212-136.946 19.46-46.95 65.29-77.554 116.114-77.538 69.381.017 125.616 56.269 125.61 125.65z"></path></g></svg>'
   },
-  // {
-  //   title: 'StackBlitz',
-  //   baseurl: `https://stackblitz.com/${platform}`,
-  //   platforms: ['github'],
-  //   type: 'repoName',
-  //   icon: '<svg width="16" height="16" viewBox="0 0 25 33" class="mr-2" style="vertical-align:sub"><path fill="var(--color-text-primary)" fill-rule="nonzero" stroke="none" stroke-width="1" d="M0 19.9187087L9.87007874 19.9187087 4.12007874 34 23 13.9612393 13.0846457 13.9612393 18.7893701 0z"></path></svg>'
-  // },
   {
     title: 'Gitpod',
     baseurl: `https://gitpod.io/#https://${platform}.com`,
@@ -64,7 +57,6 @@ const vsCodeItem = {
 };
 
 const repoUrlPath = '/' + location.pathname.split('/').slice(1, 3).join('/');
-// const hasPackageJson = [...document.querySelectorAll('.Details > .js-active-navigation-container > .Box-row')].find((el) => el.querySelector('a.js-navigation-open').innerText === 'package.json');
 
 switch (platform) {
   case 'github':
@@ -98,7 +90,6 @@ function addGithubSelectMenu () {
   <div>
     <ul class="dropdown-menu dropdown-menu-sw">
       ${ideWebsitesList.filter((item) => item.platforms.includes(platform)).map((item) =>
-    /* item.title === 'StackBlitz' && !hasPackageJson) ? '' : */
     `<li data-toggle-for="open-in-web-ide"><a href="${item.baseurl}${item.type === 'repoName' ? repoUrlPath : location.pathname.replace(/\/tree\/master$/, '')}" class="dropdown-item" target="_blank" rel="noopener noreferrer">
         ${item.icon}
         ${item.title}
