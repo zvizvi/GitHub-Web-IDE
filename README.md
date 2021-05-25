@@ -4,6 +4,7 @@
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/adjiklnjodbiaioggfpbpkhbfcnhgkfe.svg)][chrome_link]
 [![Firefox Addons](https://img.shields.io/amo/v/github-web-ide.svg)][firefox_link]
 [![Edge Addons](https://img.shields.io/badge/dynamic/json?label=edge%20add-on&prefix=v&query=%24.version&url=https%3A%2F%2Fmicrosoftedge.microsoft.com%2Faddons%2Fgetproductdetailsbycrxid%2Fakjbkjciknacicbnkfjbnlaeednpadcf)][edge_link]
+[![Github Release](https://img.shields.io/github/v/release/zvizvi/GitHub-Web-IDE.svg)][release_link]
 
 
 This extension adds to any GitHub repository a new drop down menu which offers links to a number of online services that allow viewing the source code of the repository in an IDE like interface.
@@ -54,3 +55,4 @@ https://microsoftedge.microsoft.com/addons/detail/akjbkjciknacicbnkfjbnlaeednpad
 [firefox_badge]: https://user-images.githubusercontent.com/4354421/108622754-82249b00-7443-11eb-914d-387b3977923c.png
 [edge_link]: https://microsoftedge.microsoft.com/addons/detail/akjbkjciknacicbnkfjbnlaeednpadcf
 [edge_badge]: https://user-images.githubusercontent.com/4354421/108622750-7f29aa80-7443-11eb-992d-b56cdbd83713.png
+[release_link]: https://github.com/zvizvi/GitHub-Web-IDE/releases/latest
