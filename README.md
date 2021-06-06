@@ -21,6 +21,7 @@ Services currently supported:
 
 
 ### What's changed?
+* v1.0.12 StackBlitz link added (for supported repositories only).
 * v1.0.11 Dark mode support.
 * v1.0.10 Open current selected branch.
 * v1.0.8 GitLab support, Glitch link added.
