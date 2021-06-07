@@ -1,10 +1,10 @@
 {
-  "name": "Github Web IDE",
-  "description": "Open Github repositories in online web IDE",
+  "name": "GitHub Web IDE",
+  "description": "Open GitHub repositories in online web IDE",
   "manifest_version": 3,
   "update_url": "https://clients2.google.com/service/update2/crx",
-  "homepage_url": "https://github.com/zvizvi/Github-Web-IDE",
-  "version": "1.0.12",
+  "homepage_url": "https://github.com/zvizvi/GitHub-Web-IDE",
+  "version": "1.0.13",
   "author": "zvizvi5@outlook.com",
   "action": {
     "default_icon": {

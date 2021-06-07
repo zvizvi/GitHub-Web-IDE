@@ -14,6 +14,7 @@ Services currently supported:
 * GitHub1s
 * Repl.it
 * Gitpod
+* StackBlitz
 * Glitch
 * Sourcegraph
 * GitLab.Surf
@@ -21,6 +22,7 @@ Services currently supported:
 
 
 ### What's changed?
+* v1.0.13 Bug fixed.
 * v1.0.12 StackBlitz link added (for supported repositories only).
 * v1.0.11 Dark mode support.
 * v1.0.10 Open current selected branch.

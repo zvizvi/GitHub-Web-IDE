@@ -86,7 +86,7 @@ function filterItems (item) {
   if (item.title === 'StackBlitz' && !hasPackageJson) {
     return false;
   }
-  return (item) => item.platforms.includes(platform);
+  return item.platforms.includes(platform);
 }
 
 function addGithubSelectMenu () {
