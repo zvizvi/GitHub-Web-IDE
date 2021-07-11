@@ -55,15 +55,27 @@ const ideWebsitesList = [
     platforms: ['github', 'gitlab'],
     type: 'repoName',
     icon: '<svg width="16" height="16" viewBox="0 0 65 64" class="mr-2" style="vertical-align:sub"><path d="M19.5809 8.42498L33.4692 59.2756C34.4044 62.6921 37.9254 64.7045 41.3365 63.772C44.7477 62.8342 46.7547 59.3051 45.8222 55.8886L31.9312 5.03529C30.996 1.61881 27.475 -0.393568 24.0639 0.541611C20.6554 1.47679 18.6457 5.00582 19.5809 8.42498Z" fill="var(--color-text-primary)"></path><path d="M45.2995 8.23211L10.5184 47.5659C8.17375 50.2187 8.41759 54.2756 11.065 56.6256C13.7125 58.9756 17.7587 58.7291 20.1033 56.0763L54.8845 16.7425C57.2291 14.0897 56.9853 10.0355 54.3378 7.68548C51.6904 5.33547 47.6469 5.57931 45.2995 8.23211Z" fill="var(--color-text-primary)"></path><path d="M5.89199 30.0308L55.494 46.4621C58.8515 47.5768 62.4716 45.7493 63.5837 42.3864C64.6957 39.0208 62.8709 35.3927 59.516 34.2833L9.91138 17.844C6.55385 16.7346 2.93372 18.5568 1.82437 21.9223C0.712335 25.2879 2.53446 28.9161 5.89199 30.0308Z" fill="var(--color-text-primary)"></path></svg>'
+  },
+  {
+    title: 'Clone in VSCode',
+    baseurl: `vscode://vscode.git/clone?url=https://${platform}.com`,
+    platforms: ['github'],
+    type: 'url',
+    icon: '<svg width="16" height="16" viewBox="0 0 276 276" class="mr-2" style="vertical-align:sub"><g><path d="M246.94 27.6383L194.193 2.24138C188.088 -0.698302 180.791 0.541721 175.999 5.33332L3.32371 162.773C-1.32082 167.008 -1.31548 174.32 3.33523 178.548L17.4399 191.37C21.2421 194.827 26.9682 195.081 31.0619 191.976L239.003 34.2269C245.979 28.9347 255.999 33.9103 255.999 42.6667V42.0543C255.999 35.9078 252.478 30.3047 246.94 27.6383Z" fill="var(--color-text-primary)"/><g><path d="M246.94 228.362L194.193 253.759C188.088 256.698 180.791 255.458 175.999 250.667L3.32371 93.2272C-1.32082 88.9925 -1.31548 81.6802 3.33523 77.4523L17.4399 64.6298C21.2421 61.1733 26.9682 60.9188 31.0619 64.0245L239.003 221.773C245.979 227.065 255.999 222.09 255.999 213.333V213.946C255.999 220.092 252.478 225.695 246.94 228.362Z" fill="var(--color-text-primary)"/></g><g><path d="M194.196 253.763C188.089 256.7 180.792 255.459 176 250.667C181.904 256.571 192 252.389 192 244.039V11.9606C192 3.61057 181.904 -0.571175 176 5.33321C180.792 0.541166 188.089 -0.700607 194.196 2.23648L246.934 27.5985C252.476 30.2635 256 35.8686 256 42.0178V213.983C256 220.132 252.476 225.737 246.934 228.402L194.196 253.763Z" fill="var(--color-text-primary)"/></g></g></svg>',
+    class: 'd-none d-md-block border-top'
+  },
+  {
+    title: 'Open in VSCode',
+    platforms: ['github'],
+    baseurl: 'https://open.vscode.dev',
+    type: 'repoName',
+    icon: '<svg width="16" height="16" viewBox="0 0 276 276" class="mr-2" style="vertical-align:sub"><g><path d="M246.94 27.6383L194.193 2.24138C188.088 -0.698302 180.791 0.541721 175.999 5.33332L3.32371 162.773C-1.32082 167.008 -1.31548 174.32 3.33523 178.548L17.4399 191.37C21.2421 194.827 26.9682 195.081 31.0619 191.976L239.003 34.2269C245.979 28.9347 255.999 33.9103 255.999 42.6667V42.0543C255.999 35.9078 252.478 30.3047 246.94 27.6383Z" fill="var(--color-text-primary)"/><g><path d="M246.94 228.362L194.193 253.759C188.088 256.698 180.791 255.458 175.999 250.667L3.32371 93.2272C-1.32082 88.9925 -1.31548 81.6802 3.33523 77.4523L17.4399 64.6298C21.2421 61.1733 26.9682 60.9188 31.0619 64.0245L239.003 221.773C245.979 227.065 255.999 222.09 255.999 213.333V213.946C255.999 220.092 252.478 225.695 246.94 228.362Z" fill="var(--color-text-primary)"/></g><g><path d="M194.196 253.763C188.089 256.7 180.792 255.459 176 250.667C181.904 256.571 192 252.389 192 244.039V11.9606C192 3.61057 181.904 -0.571175 176 5.33321C180.792 0.541166 188.089 -0.700607 194.196 2.23648L246.934 27.5985C252.476 30.2635 256 35.8686 256 42.0178V213.983C256 220.132 252.476 225.737 246.934 228.402L194.196 253.763Z" fill="var(--color-text-primary)"/></g></g></svg>',
+    class: 'd-none d-md-block'
   }
 ];
-const vsCodeItem = {
-  title: 'Clone in VSCode',
-  baseurl: `vscode://vscode.git/clone?url=https://${platform}.com`,
-  icon: '<svg width="16" height="16" viewBox="0 0 276 276" class="mr-2" style="vertical-align:sub"><g><path d="M246.94 27.6383L194.193 2.24138C188.088 -0.698302 180.791 0.541721 175.999 5.33332L3.32371 162.773C-1.32082 167.008 -1.31548 174.32 3.33523 178.548L17.4399 191.37C21.2421 194.827 26.9682 195.081 31.0619 191.976L239.003 34.2269C245.979 28.9347 255.999 33.9103 255.999 42.6667V42.0543C255.999 35.9078 252.478 30.3047 246.94 27.6383Z" fill="var(--color-text-primary)"/><g><path d="M246.94 228.362L194.193 253.759C188.088 256.698 180.791 255.458 175.999 250.667L3.32371 93.2272C-1.32082 88.9925 -1.31548 81.6802 3.33523 77.4523L17.4399 64.6298C21.2421 61.1733 26.9682 60.9188 31.0619 64.0245L239.003 221.773C245.979 227.065 255.999 222.09 255.999 213.333V213.946C255.999 220.092 252.478 225.695 246.94 228.362Z" fill="var(--color-text-primary)"/></g><g><path d="M194.196 253.763C188.089 256.7 180.792 255.459 176 250.667C181.904 256.571 192 252.389 192 244.039V11.9606C192 3.61057 181.904 -0.571175 176 5.33321C180.792 0.541166 188.089 -0.700607 194.196 2.23648L246.934 27.5985C252.476 30.2635 256 35.8686 256 42.0178V213.983C256 220.132 252.476 225.737 246.934 228.402L194.196 253.763Z" fill="var(--color-text-primary)"/></g></g></svg>'
-};
 
 const repoUrlPath = '/' + location.pathname.split('/').slice(1, 3).join('/');
+const repoUrlFullPath = location.pathname.replace(/\/tree\/master$/, '');
 const hasPackageJson = [...document.querySelectorAll('.Details > .js-active-navigation-container > .Box-row')].some((el) => el.querySelector('a.js-navigation-open').innerText === 'package.json');
 
 switch (platform) {
@@ -105,14 +117,10 @@ function addGithubSelectMenu () {
   <div>
     <ul class="dropdown-menu dropdown-menu-sw">
       ${ideWebsitesList.filter(filterItems).map((item) =>
-    `<li data-toggle-for="open-in-web-ide"><a href="${item.baseurl}${item.type === 'repoName' ? repoUrlPath : location.pathname.replace(/\/tree\/master$/, '')}" class="dropdown-item" target="_blank" rel="noopener noreferrer">
+    `<li class="${item.class || ''}" data-toggle-for="open-in-web-ide"><a href="${item.baseurl}${item.type === 'repoName' ? repoUrlPath : repoUrlFullPath}" class="dropdown-item" target="_blank" rel="noopener noreferrer">
         ${item.icon}
         ${item.title}
       </a></li>`).join('')}
-      <li class="border-top d-none d-md-flex" data-toggle-for="open-in-web-ide"><a href="${vsCodeItem.baseurl}${repoUrlPath}.git" class="dropdown-item" rel="noopener noreferrer">
-        ${vsCodeItem.icon}
-        ${vsCodeItem.title}
-      </a></li>
     </ul>
   </div> `;
 

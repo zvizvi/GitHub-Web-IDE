@@ -18,10 +18,12 @@ Services currently supported:
 * Glitch
 * Sourcegraph
 * GitLab.Surf
-* *New added:*  Clone in VSCode (locally)
+* *New added:*  **Clone** in VSCode (locally)
+* *New added:*  **Open** in VSCode (locally)
 
 
 ### What's changed?
+* v1.0.14 Open in VSCode option added (open.vscode.dev).
 * v1.0.13 Bug fixed.
 * v1.0.12 StackBlitz link added (for supported repositories only).
 * v1.0.11 Dark mode support.
