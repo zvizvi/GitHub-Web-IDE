@@ -10,17 +10,17 @@
 This extension adds to any GitHub repository a new drop down menu which offers links to a number of online services that allow viewing the source code of the repository in an IDE like interface.
 Services currently supported:
 
-* GitHub Dev
-* CodeSandbox
-* GitHub1s
-* Repl.it
-* Gitpod
-* StackBlitz
-* Glitch
-* Sourcegraph
-* GitLab.Surf
+* [GitHub Dev](https://github.dev/)
+* [CodeSandbox](https://codesandbox.io/)
+* [GitHub1s](https://github1s.com/)
+* [Repl.it](https://replit.com/)
+* [Gitpod](https://gitpod.io/)
+* [StackBlitz](https://stackblitz.com/)
+* [Glitch](https://glitch.com/)
+* [Sourcegraph](https://sourcegraph.com/)
+* [GitLab.Surf](https://gitlab.surf/)
 * *New added:*  **Clone** in VSCode (locally)
-* *New added:*  **Open** in VSCode (locally)
+* *New added:*  [**Open** in VSCode](https://open.vscode.dev/) (locally)
 
 
 ### What's changed?
