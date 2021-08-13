@@ -10,6 +10,7 @@
 This extension adds to any GitHub repository a new drop down menu which offers links to a number of online services that allow viewing the source code of the repository in an IDE like interface.
 Services currently supported:
 
+* GitHub Dev
 * CodeSandbox
 * GitHub1s
 * Repl.it
