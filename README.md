@@ -23,6 +23,7 @@ Services currently supported:
 
 
 ### What's changed?
+* v1.0.15 GitHub Dev link added.
 * v1.0.14 Open in VSCode option added (open.vscode.dev).
 * v1.0.13 Bug fixed.
 * v1.0.12 StackBlitz link added (for supported repositories only).
