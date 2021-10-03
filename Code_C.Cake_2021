@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> 🥕 Brazilian Carrot Cake</title>
+
+
+    <style>
+        h1 {
+            text-align: center;
+            color: linear-gradient(135deg, #434343 10%, #000000 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 35px;
+            padding: 20px 80px;
+            margin: 0 auto;
+            max-width: 850px;
+            display: inline;
+            font-weight: lighter;
+
+
+
+
+
+
+        }
+
+
+        h2 {
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: lighter;
+            box-shadow: 5px 5px 10px rgba(194, 44, 22, 0.2);
+            border-radius: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(135deg, #603813 10%, #b29f94 100%);
+
+
+
+        }
+
+
+        img {
+
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+            width: 500px;
+            border: 3px solid whitesmoke;
+        }
+
+        p {
+
+
+            line-height: 1.5;
+            font-size: 15px;
+            margin: 0 auto;
+            font-style: normal;
+            font-weight: lighter;
+            font-family: Garamond;
+
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            background: linear-gradient(135deg, #50cc7f 10%, #f5d100 100%);
+            opacity: 0.7;
+            color: white;
+            font-size: 17px;
+            padding: 20px 30px;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 5px 5px 10px rgba(0, 128, 0, 0.4);
+            transition: all 0.3s ease-in-out;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        button:hover {
+            background: #50cc7f;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        .container {
+
+            border: 1px solid whitesmoke;
+            margin: 0 auto;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 15px 80px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: lighter;
+            margin: 0 auto;
+            background-image: linear-gradient(135deg, #fdfcfb 10%, #e2d1c3 100%);
+
+        }
+
+        body {
+            background-image: linear-gradient(135deg, #603813 10%, #b29f94 100%);
+
+        }
+
+        .get-the-recipe {
+            color: orangered;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .get-the-recipe:hover {
+            text-decoration: wavy;
+            color: #FAC103;
+        }
+
+        .designer {
+            text-align: center;
+            color: orangered;
+            font-size: 12px;
+        }
+
+        .myPage {
+            color: orangered;
+
+        }
+
+        .myPage:hover {
+            color: #631F0E;
+            text-decoration: none;
+
+        }
+
+        .brazilian-symbol {
+            width: 40px;
+            display: block;
+
+        }
+
+        .cakeText {
+            border: 1px solid;
+            margin: 0 auto;
+            border-radius: 10px;
+            text-align: center;
+            padding: 30px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            background-color: #F6EAEC;
+        }
+
+        .orangeText {
+            color: orangered;
+        }
+
+        .greenText {
+            color: green
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+
+
+
+            <br />
+
+            <strong>
+                <hr />
+            </strong>
+
+            🌴 Brazilian <br /><span class="orangeText">Carrot</span> Cake
+
+
+
+            <hr />
+
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/807/original/Brazy.Flagge.jpeg?1631110450"
+                alt="Brazilian Symbol" class="brazilian-symbol" />
+
+
+
+        </h1>
+
+        <h2>
+
+            <em>"Memories of my Childhood...!"</em> <br />
+        </h2>
+
+
+
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/793/original/Brazilian-carrot-cake-2-bolo-de-cenoura-fofinho-2-982x1536.jpeg?1631105465"
+            alt="Brazilian-Carrot-Cake" />
+
+
+        <br />
+
+
+
+        <div class="cakeText">
+
+            <p>
+                <span class="greenText"> 🥕 <strong>Brazilian Carrot Cake </strong></span> quickly prepared in the
+                kitchen blender and topped with a
+                silky and decadent chocolate
+                sauce. This
+                is a kid-friendly cake that also comes with useful tips for a moist cake. It’s simple, less sweet than
+                the
+                old fashioned
+                carrot cake...
+
+                <a href="https://www.easyanddelish.com/tips-for-a-moist-cake-and-carrot-cake/" target="_blank"
+                    class="get-the-recipe">
+                    Get the Recipe on Easy and Delish
+                </a>
+
+            </p>
+
+        </div>
+
+        <button class="joinClasses-button">
+            🎂 Join our Baking Platform!
+        </button>
+
+
+        <p class="designer">
+            This page was built by
+            <a href="https://www.facebook.com/GabrielavelascoMovement" target="_blank" class="myPage">
+                Gabriela Velasco LCVH-8991
+            </a>
+
+
+        </p>
+    </div>
+    <script>
+
+
+
+
+        function joinBakingPlatform() {
+
+
+            let name = prompt("What is your name?");
+            let email = prompt(" 👩‍💻" + name + ", " + "What is your email address?");
+            let favoriteCake = prompt("👨‍🍳" + name + ", " + "which is your favorite Cake?");
+
+
+
+
+
+            let Baking = prompt(" 🍀 " + name + ", " + "would you like to learn how to bake" + " " + favoriteCake + " 🎂 " + "like a Chef with our Team ? ");
+            Baking = Baking.toLowerCase();
+
+            if (Baking === "yes") {
+
+
+
+
+                alert("👨‍🍳  Thank you," + " " + name + "! We will be in touch by email, but don´t forget to search for some of" + " " + favoriteCake + " " + "🎂 Recipes to prepare during our Baking Classes!");
+            }
+
+
+            else {
+
+                alert(` 👨‍🍳 Thank you, ${name}! We will be in touch by email, take a look on ${favoriteCake} 🎂 Recipes in our Platform and Welcome to Baking Universe!`);
+            }
+
+
+
+
+            let buyCakes = prompt(" 👨‍🍳 " + name + ", " + "would you like to buy some home made delicious cakes?");
+            buyCakes = buyCakes.toLowerCase();
+
+
+            if (buyCakes === "yes") {
+
+
+                alert(`Let us help you to choose the best cake from our specialists! 🥧  Have a great sweet day!`);
+
+
+            }
+
+
+            else {
+
+                alert(` 🥧 Have a great sweet day!`);
+            }
+
+
+        }
+
+
+
+
+        let joinClassesButton = document.querySelector(".joinClasses-button");
+        joinClassesButton.addEventListener("click", joinBakingPlatform);
+    </script>
+</body>
+
+</html>
