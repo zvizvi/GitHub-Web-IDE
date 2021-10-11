@@ -93,7 +93,7 @@ const ideWebsitesList = [
 
 const repoUrlPath = '/' + location.pathname.split('/').slice(1, 3).join('/');
 const repoUrlFullPath = location.pathname.replace(/\/tree\/master$/, '');
-const hasPackageJson = [...document.querySelectorAll('.Details > .js-active-navigation-container > .Box-row')].some((el) => el.querySelector('a.js-navigation-open').innerText === 'package.json');
+const hasPackageJson = [...document.querySelectorAll('.Details > .js-active-navigation-container > .Box-row a.js-navigation-open')].some((el) => el.innerText === 'package.json');
 
 switch (platform) {
   case 'github':
