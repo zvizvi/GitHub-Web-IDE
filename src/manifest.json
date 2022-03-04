@@ -14,9 +14,10 @@
       "128": "img/icon128.png"
     }
   },
-  "options_ui": {
-    "page": "html/options.html"
-  },
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "html/options.html",
   "content_scripts": [
     {
       "all_frames": false,

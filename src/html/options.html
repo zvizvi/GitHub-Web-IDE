@@ -7,24 +7,30 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 15px 10px;
-      text-align: center;
       -webkit-user-select: none;
       user-select: none;
+    }
+
+    .logo {
+      width: 32px;
+      height: 32px;
     }
 
     .content {
       min-height: 150px;
     }
   </style>
-  <link rel="stylesheet" href="https://unpkg.com/@primer/css/dist/primer.css">
+  <link rel="stylesheet" href="/node_modules/@primer/css/dist/primer.css">
 </head>
 
-<body>
+<body class="m-0 p-0">
   <main id="js-pjax-container">
-    <div class="pt-4 container-xl p-responsive clearfix">
-      <div class="Layout Layout--flowRow-until-md Layout--sidebarPosition-start Layout--sidebarPosition-flowRow-start">
+    <div class="container-lg p-responsive clearfix text-left">
+      <div tabindex="-1" class="d-flex flex-items-center p-4 position-sticky top-0 color-bg-default" style="z-index:3">
+        <a class="color-fg-default mr-3" aria-hidden="true" tabindex="-1" href="/en"><img class="logo" src="/img/logo.svg" alt="Logo" /></a>
+        <a class="f4 text-semibold color-fg-default no-underline no-wrap pl-2 flex-auto" href="/en">GitHub Web IDE Options</a>
+      </div>
+      <div class="Layout pt-4 Layout--flowRow-until-md Layout--sidebarPosition-start Layout--sidebarPosition-flowRow-start">
         <div class="Layout-sidebar">
           <div class="pr-md-4 pr-0">
             <navigation-list>
@@ -50,7 +56,7 @@
         <div class="Layout-main">
           <div class="Layout-main-centered-md">
             <div class="container-md">
-              <div class="text-left ">
+              <div>
                 <div class="Subhead">
                   <h2 class="Subhead-heading">IDE list selection</h2>
                 </div>
@@ -99,14 +105,19 @@
                 <div class="form-checkbox">
                   <label>
                     <input type="checkbox" checked="checked" />
-                    GitlabSurf
+                    Sourcegraph
                   </label>
                 </div>
                 <div class="form-checkbox">
                   <label>
                     <input type="checkbox" checked="checked" />
-                    Sourcegraph
+                    GitlabSurf
                   </label>
+                  <span class="tooltipped tooltipped-multiline tooltipped-n ml-1 mr-4" aria-label="For Gitlab repositories">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-info color-fg-muted">
+                      <path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                    </svg>
+                  </span>
                 </div>
                 <!-- <div class="form-checkbox">
                   <label>
@@ -144,7 +155,7 @@
                 </div>
               </div>
 
-              <div class="text-center my-6">
+              <div class="text-center mt-6 mb-4">
                 <button type="button" class="btn mr-2" disabled>Cancel</button>
                 <button type="submit" class="btn btn-primary" disabled>Save changes</button>
               </div>
@@ -153,8 +164,8 @@
           </div>
         </div>
       </div>
+      <div class="py-3">Made with <span class="tooltipped tooltipped-n" aria-label="Coffee">☕</span> by <a href="https://github.com/zvizvi/GitHub-Web-IDE" target="_blank">@zvizvi</a></div>
     </div>
-    <div>Made with <span title="Coffee">☕</span> by <a href="https://github.com/zvizvi/GitHub-Web-IDE" target="_blank">@zvizvi</a></div>
   </main>
   <script src="../js/options.js"></script>
 </body>
