@@ -7,8 +7,6 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      -webkit-user-select: none;
-      user-select: none;
     }
 
     .logo {
@@ -18,6 +16,10 @@
 
     .content {
       min-height: 150px;
+    }
+
+    .form-checkbox>label {
+      padding: 10px 0 !important;
     }
   </style>
   <link rel="stylesheet" href="/node_modules/@primer/css/dist/primer.css">
@@ -58,59 +60,59 @@
             <div class="container-md">
               <div>
                 <div class="Subhead">
-                  <h2 class="Subhead-heading">IDE list selection</h2>
+                  <h2 class="Subhead-heading">Enabled IDE list</h2>
                 </div>
                 <div class="form-checkbox">
                   <label>
-                    <input type="checkbox" checked="checked" />
+                    <input type="checkbox" id="gitHubDev" />
                     GitHub Dev
                   </label>
                 </div>
                 <div class="form-checkbox">
                   <label>
-                    <input type="checkbox" checked="checked" />
+                    <input type="checkbox" id="codeSandbox" />
                     CodeSandbox
                   </label>
                 </div>
                 <div class="form-checkbox">
                   <label>
-                    <input type="checkbox" checked="checked" />
+                    <input type="checkbox" id="gitHub1s" />
                     GitHub1s
                   </label>
                 </div>
                 <div class="form-checkbox">
                   <label>
-                    <input type="checkbox" checked="checked" />
+                    <input type="checkbox" id="replit" />
                     Repl.it
                   </label>
                 </div>
                 <div class="form-checkbox">
                   <label>
-                    <input type="checkbox" checked="checked" />
+                    <input type="checkbox" id="stackBlitz" />
                     StackBlitz
                   </label>
                 </div>
                 <div class="form-checkbox">
                   <label>
-                    <input type="checkbox" checked="checked" />
+                    <input type="checkbox" id="gitpod" />
                     Gitpod
                   </label>
                 </div>
                 <div class="form-checkbox">
                   <label>
-                    <input type="checkbox" checked="checked" />
+                    <input type="checkbox" id="glitch" />
                     Glitch
                   </label>
                 </div>
                 <div class="form-checkbox">
                   <label>
-                    <input type="checkbox" checked="checked" />
+                    <input type="checkbox" id="sourcegraph" />
                     Sourcegraph
                   </label>
                 </div>
                 <div class="form-checkbox">
                   <label>
-                    <input type="checkbox" checked="checked" />
+                    <input type="checkbox" id="gitlabSurf" />
                     GitlabSurf
                   </label>
                   <span class="tooltipped tooltipped-multiline tooltipped-n ml-1 mr-4" aria-label="For Gitlab repositories">
@@ -144,20 +146,33 @@
                   </label>
                 </div> -->
 
+                <div class="form-checkbox">
+                  <label>
+                    <input type="checkbox" id="cloneInVSCode" />
+                    Clone in VSCode
+                  </label>
+                </div>
+                <div class="form-checkbox">
+                  <label>
+                    <input type="checkbox" id="openInVSCode" />
+                    Open in VSCode
+                  </label>
+                </div>
+
                 <div class="Subhead mt-6">
                   <h2 class="Subhead-heading">Opening options</h2>
                 </div>
                 <div class="form-checkbox">
                   <label>
-                    <input type="checkbox" checked="checked" />
+                    <input type="checkbox" id="openInNewTab" />
                     Open IDE in new tab
                   </label>
                 </div>
               </div>
 
               <div class="text-center mt-6 mb-4">
-                <button type="button" class="btn mr-2" disabled>Cancel</button>
-                <button type="submit" class="btn btn-primary" disabled>Save changes</button>
+                <button id="reset-button" type="button" class="btn mr-2">Reset</button>
+                <button id="save-button" type="button" class="btn btn-primary">Save changes</button>
               </div>
 
             </div>
