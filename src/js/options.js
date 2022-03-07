@@ -9,6 +9,9 @@ const defaultOptions = {
   gitpod: true,
   glitch: true,
   sourcegraph: true,
+  activeForks: false,
+  gitpop2: false,
+  gitHubMemory: false,
   cloneInVSCode: true,
   vsCodeRemoteRepositories: false,
   openInNewTab: true
