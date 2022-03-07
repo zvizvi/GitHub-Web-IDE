@@ -9,7 +9,6 @@ const defaultOptions = {
   gitpod: true,
   glitch: true,
   sourcegraph: true,
-  gitlabSurf: true,
   cloneInVSCode: true,
   vsCodeRemoteRepositories: false,
   openInNewTab: true

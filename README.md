@@ -18,7 +18,6 @@ Services currently supported:
 * [StackBlitz](https://stackblitz.com/)
 * [Glitch](https://glitch.com/)
 * [Sourcegraph](https://sourcegraph.com/)
-* [GitLab.Surf](https://gitlab.surf/)
 * Clone in VSCode (locally)
 * VSCode Remote Repositories (locally)
 
