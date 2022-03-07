@@ -10,8 +10,8 @@ const defaultOptions = {
   glitch: true,
   sourcegraph: true,
   gitlabSurf: true,
-  openInVSCode: true,
   cloneInVSCode: true,
+  vsCodeRemoteRepositories: false,
   openInNewTab: true
 };
 let options = { ...defaultOptions };

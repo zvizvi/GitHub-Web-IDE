@@ -19,8 +19,8 @@ Services currently supported:
 * [Glitch](https://glitch.com/)
 * [Sourcegraph](https://sourcegraph.com/)
 * [GitLab.Surf](https://gitlab.surf/)
-* **Clone** in VSCode (locally)
-* *New added:*  [**Open** in VSCode](https://open.vscode.dev/) (locally)
+* Clone in VSCode (locally)
+* VSCode Remote Repositories (locally)
 
 
 ### What's changed?
