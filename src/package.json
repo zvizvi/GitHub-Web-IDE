@@ -1,5 +1,18 @@
 {
+  "name": "github-web-ide",
+  "version": "2.0.0",
+  "description": "⚡ Open GitHub repositories in online web IDE",
+  "main": "README.md",
   "dependencies": {
     "@primer/css": "^19.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zvizvi/GitHub-Web-IDE.git"
+  },
+  "author": "zvizvi",
+  "bugs": {
+    "url": "https://github.com/zvizvi/GitHub-Web-IDE/issues"
+  },
+  "homepage": "https://github.com/zvizvi/GitHub-Web-IDE#readme"
 }

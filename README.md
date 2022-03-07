@@ -18,11 +18,20 @@ Services currently supported:
 * [StackBlitz](https://stackblitz.com/)
 * [Glitch](https://glitch.com/)
 * [Sourcegraph](https://sourcegraph.com/)
+* [Active Forks](https://techgaun.github.io/active-forks/)
+* [Gitpop2](https://gitpop2.herokuapp.com/)
+* [GitHub Memory](https://githubmemory.com/)
 * Clone in VSCode (locally)
 * VSCode Remote Repositories (locally)
 
 
 ### What's changed?
+* v2.0.0
+  * Extension customizing options page.
+  * Open in VSCode Remote Repositories option.
+  * Active Forks (disabled by default).
+  * Gitpop2 (disabled by default).
+  * GitHub Memory (disabled by default).
 * v1.0.16 Style changes and improvements.
 * v1.0.15 GitHub Dev link added.
 * v1.0.14 Open in VSCode option added (open.vscode.dev).
