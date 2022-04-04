@@ -2,6 +2,7 @@
 
 const defaultOptions = {
   gitHubDev: true,
+  vsCodeDev: true,
   codeSandbox: true,
   gitHub1s: true,
   replit: true,
@@ -56,14 +57,9 @@ const show = function () {
   }
 };
 
-// Reset to defaults
-const reset = async function () {
-  await save(defaultOptions);
-};
-
-// On save button clicked
-document.addEventListener('click', async (event) => {
-  if (event.target.id === 'save-button') {
+// On checkbox changed
+document.addEventListener('input', async (event) => {
+  if (event.target.type === 'checkbox') {
     for (const key in defaultOptions) {
       switch (typeof defaultOptions[key]) {
         case ('boolean'): {
@@ -80,6 +76,11 @@ document.addEventListener('click', async (event) => {
     await save(options);
   }
 });
+
+// Reset to defaults
+const reset = async function () {
+  await save(defaultOptions);
+};
 
 // On reset button clicked
 document.addEventListener('click', async (event) => {

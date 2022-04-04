@@ -11,6 +11,14 @@ const ideWebsitesList = [
     icon: '<svg width="16" height="16" viewBox="0 0 16 16" class="mr-2" style="vertical-align:sub"><path fill="var(--color-fg-default)" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>'
   },
   {
+    title: 'VSCode Dev',
+    name: 'vsCodeDev',
+    baseurl: 'https://vscode.dev/github/',
+    platforms: ['github'],
+    openInNewTab: true,
+    icon: '<svg width="16" height="16" viewBox="0 0 276 276" class="mr-2" style="vertical-align:sub"><g><path d="M246.94 27.6383L194.193 2.24138C188.088 -0.698302 180.791 0.541721 175.999 5.33332L3.32371 162.773C-1.32082 167.008 -1.31548 174.32 3.33523 178.548L17.4399 191.37C21.2421 194.827 26.9682 195.081 31.0619 191.976L239.003 34.2269C245.979 28.9347 255.999 33.9103 255.999 42.6667V42.0543C255.999 35.9078 252.478 30.3047 246.94 27.6383Z" fill="var(--color-fg-default)"/><g><path d="M246.94 228.362L194.193 253.759C188.088 256.698 180.791 255.458 175.999 250.667L3.32371 93.2272C-1.32082 88.9925 -1.31548 81.6802 3.33523 77.4523L17.4399 64.6298C21.2421 61.1733 26.9682 60.9188 31.0619 64.0245L239.003 221.773C245.979 227.065 255.999 222.09 255.999 213.333V213.946C255.999 220.092 252.478 225.695 246.94 228.362Z" fill="var(--color-fg-default)"/></g><g><path d="M194.196 253.763C188.089 256.7 180.792 255.459 176 250.667C181.904 256.571 192 252.389 192 244.039V11.9606C192 3.61057 181.904 -0.571175 176 5.33321C180.792 0.541166 188.089 -0.700607 194.196 2.23648L246.934 27.5985C252.476 30.2635 256 35.8686 256 42.0178V213.983C256 220.132 252.476 225.737 246.934 228.402L194.196 253.763Z" fill="var(--color-fg-default)"/></g></g></svg>'
+  },
+  {
     title: 'CodeSandbox',
     name: 'codeSandbox',
     baseurl: `https://codesandbox.io/s/${platform}/`,
@@ -107,6 +115,23 @@ const ideWebsitesList = [
     class: 'd-none d-md-block'
   }
 ];
+const defaultOptions = {
+  gitHubDev: true,
+  vsCodeDev: true,
+  codeSandbox: true,
+  gitHub1s: true,
+  replit: true,
+  stackBlitz: true,
+  gitpod: true,
+  glitch: true,
+  sourcegraph: true,
+  activeForks: false,
+  gitpop2: false,
+  gitHubMemory: false,
+  cloneInVSCode: true,
+  vsCodeRemoteRepositories: false,
+  openInNewTab: true
+};
 
 const repoUrlPath = location.pathname.split('/').slice(1, 3).join('/');
 const hasPackageJson = [...document.querySelectorAll('.Details > .js-active-navigation-container > .Box-row a.js-navigation-open')].some((el) => el.innerText === 'package.json');
@@ -114,7 +139,7 @@ const hasPackageJson = [...document.querySelectorAll('.Details > .js-active-navi
 let options;
 const init = async function () {
   const storage = await chrome.storage.sync.get('options');
-  options = storage.options;
+  options = storage.options || defaultOptions;
 
   switch (platform) {
     case 'github': {

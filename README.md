@@ -11,6 +11,7 @@ This extension adds to any GitHub repository a new drop down menu which offers l
 Services currently supported:
 
 * [GitHub Dev](https://github.dev/)
+* [VSCode Dev](https://vscode.dev/)
 * [CodeSandbox](https://codesandbox.io/)
 * [GitHub1s](https://github1s.com/)
 * [Repl.it](https://replit.com/)
@@ -26,6 +27,7 @@ Services currently supported:
 
 
 ### What's changed?
+* v2.0.1 Open in VSCodeDev option
 * v2.0.0
   * Extension customizing options page.
   * Open in VSCode Remote Repositories option.
