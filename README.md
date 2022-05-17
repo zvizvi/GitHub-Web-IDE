@@ -4,7 +4,7 @@
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/adjiklnjodbiaioggfpbpkhbfcnhgkfe.svg)][chrome_link]
 [![Firefox Addons](https://img.shields.io/amo/v/github-web-ide.svg)][firefox_link]
 [![Edge Addons](https://img.shields.io/badge/dynamic/json?label=edge%20add-on&prefix=v&query=%24.version&url=https%3A%2F%2Fmicrosoftedge.microsoft.com%2Faddons%2Fgetproductdetailsbycrxid%2Fakjbkjciknacicbnkfjbnlaeednpadcf)][edge_link]
-[![Github Release](https://img.shields.io/github/v/release/zvizvi/GitHub-Web-IDE.svg)][release_link]
+[![GitHub Release](https://img.shields.io/github/v/release/zvizvi/GitHub-Web-IDE.svg)][release_link]
 
 
 This extension adds to any GitHub repository a new drop down menu which offers links to a number of online services that allow viewing the source code of the repository in an IDE like interface.
@@ -14,6 +14,7 @@ Services currently supported:
 * [VSCode Dev](https://vscode.dev/)
 * [CodeSandbox](https://codesandbox.io/)
 * [GitHub1s](https://github1s.com/)
+* [GitLab1s](https://gitlab1s.com/)
 * [Repl.it](https://replit.com/)
 * [Gitpod](https://gitpod.io/)
 * [StackBlitz](https://stackblitz.com/)
@@ -27,6 +28,7 @@ Services currently supported:
 
 
 ### What's changed?
+* v2.0.2 GitLab1s link added
 * v2.0.1 Open in VSCodeDev option
 * v2.0.0
   * Extension customizing options page.
@@ -49,7 +51,7 @@ Services currently supported:
 ### GitHub
 ![image](https://user-images.githubusercontent.com/4354421/107879967-a123aa00-6ee4-11eb-9582-662998618ed1.png)
 ### GitLab
-![image](https://user-images.githubusercontent.com/4354421/109164571-45c6a700-7783-11eb-8da0-61e3f4c8d588.png)
+![image](https://user-images.githubusercontent.com/4354421/168898417-45fa3aa5-4505-4f32-9c36-f05fc81f47af.png)
 
 
 ### Download

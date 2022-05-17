@@ -5,6 +5,7 @@ const defaultOptions = {
   vsCodeDev: true,
   codeSandbox: true,
   gitHub1s: true,
+  gitLab1s: true,
   replit: true,
   stackBlitz: true,
   gitpod: true,
