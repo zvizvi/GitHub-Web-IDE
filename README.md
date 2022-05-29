@@ -47,6 +47,11 @@ Services currently supported:
 * v1.0.7 Sourcegraph link added.
 * v1.0.4 Clone in VSCode option added.
 
+### ToDo:
+NPM packages file explorer, like
+- [ ] unpkg.com
+- [ ] npmjs1s.com
+- [ ] npm-explorer.tk
 
 ### GitHub
 ![image](https://user-images.githubusercontent.com/4354421/107879967-a123aa00-6ee4-11eb-9582-662998618ed1.png)
