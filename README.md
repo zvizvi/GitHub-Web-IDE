@@ -24,7 +24,6 @@ Services currently supported:
 * [Gitpop2](https://gitpop2.herokuapp.com/)
 * [GitHub Memory](https://githubmemory.com/)
 * Clone in VSCode (locally)
-* VSCode Remote Repositories (locally)
 
 
 ### What's changed?
@@ -32,7 +31,7 @@ Services currently supported:
 * v2.0.1 Open in VSCodeDev option
 * v2.0.0
   * Extension customizing options page.
-  * Open in VSCode Remote Repositories option.
+  * ~Open in VSCode Remote Repositories option.~
   * Active Forks (disabled by default).
   * Gitpop2 (disabled by default).
   * GitHub Memory (disabled by default).
