@@ -159,7 +159,8 @@ async function init () {
       }
 
       addGitHubSelectMenu();
-      document.addEventListener('pjax:end', () => {
+      document.addEventListener('soft-nav:success', () => {
+        console.log('soft-nav:success');
         document.getElementById('open-in-web-ide')?.remove();
         addGitHubSelectMenu();
       });
@@ -184,7 +185,7 @@ function filterItems (item) {
 }
 
 function addGitHubSelectMenu () {
-  const menuElement = document.querySelector('#repo-content-pjax-container .file-navigation');
+  const menuElement = document.querySelector('#repo-content-turbo-frame .file-navigation');
   if (!menuElement || menuElement.querySelector('#open-in-web-ide')) {
     return;
   }
@@ -210,9 +211,6 @@ function addGitHubSelectMenu () {
   detailsElement.setAttribute('id', 'open-in-web-ide');
   detailsElement.innerHTML = githubHtml;
 
-  // Fix Commits page style
-  fixCommitsPageStyle(menuElement);
-
   menuElement.appendChild(detailsElement);
 }
 
@@ -231,16 +229,6 @@ function addGitLabSelectMenu () {
   webIDEDropdown.setAttribute('id', 'open-in-web-ide');
   webIDEDropdown.setAttribute('style', '--color-fg-default: currentColor');
   webIDEDropdown.innerHTML = gitLabHtml;
-}
-
-function fixCommitsPageStyle (menuElement) {
-  const commitsPageNavigator = document.querySelector('#repo-content-pjax-container > .file-navigation');
-  if (commitsPageNavigator) {
-    commitsPageNavigator.classList.add('d-flex');
-    const divFlexElement = document.createElement('div');
-    divFlexElement.setAttribute('class', 'flex-auto');
-    menuElement.appendChild(divFlexElement);
-  }
 }
 
 window.onload = init;

@@ -27,6 +27,7 @@ Services currently supported:
 
 
 ### What's changed?
+* v2.0.3 Bug fixed
 * v2.0.2 GitLab1s link added
 * v2.0.1 Open in VSCodeDev option
 * v2.0.0
