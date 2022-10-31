@@ -142,7 +142,7 @@ const defaultOptions = {
   openInNewTab: true
 };
 
-const repoUrlPath = location.pathname.split('/').slice(1, 3).join('/');
+let repoUrlPath = getRepoUrlPath();
 const hasPackageJson = [...document.querySelectorAll('.Details > .js-active-navigation-container > .Box-row a.js-navigation-open')].some((el) => el.innerText === 'package.json');
 
 let options;
@@ -162,6 +162,7 @@ async function init () {
       document.addEventListener('soft-nav:success', () => {
         console.log('soft-nav:success');
         document.getElementById('open-in-web-ide')?.remove();
+        repoUrlPath = getRepoUrlPath();
         addGitHubSelectMenu();
       });
       break;
@@ -175,6 +176,10 @@ async function init () {
       break;
     }
   }
+}
+
+function getRepoUrlPath () {
+  return location.pathname.split('/').slice(1, 3).join('/');
 }
 
 function filterItems (item) {
