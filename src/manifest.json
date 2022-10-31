@@ -14,12 +14,8 @@
       "128": "img/icon128.png"
     }
   },
-  "background": {
-    "service_worker": "js/background.js"
-  },
   "permissions": [
-    "storage",
-    "tabs"
+    "storage"
   ],
   "options_page": "html/options.html",
   "content_scripts": [
