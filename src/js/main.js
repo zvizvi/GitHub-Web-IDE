@@ -142,11 +142,11 @@ const defaultOptions = {
   openInNewTab: true
 };
 
-const repoUrlPath = location.pathname.split('/').slice(1, 3).join('/');
+let repoUrlPath = getRepoUrlPath()
 const hasPackageJson = [...document.querySelectorAll('.Details > .js-active-navigation-container > .Box-row a.js-navigation-open')].some((el) => el.innerText === 'package.json');
 
 let options;
-async function init () {
+async function init() {
   const storage = await chrome.storage.sync.get('options');
   options = storage.options || defaultOptions;
 
@@ -157,13 +157,7 @@ async function init () {
       if (itemWithBorderOnTop) {
         itemWithBorderOnTop.class += ' border-top';
       }
-
       addGitHubSelectMenu();
-      document.addEventListener('soft-nav:success', () => {
-        console.log('soft-nav:success');
-        document.getElementById('open-in-web-ide')?.remove();
-        addGitHubSelectMenu();
-      });
       break;
     }
     case 'gitlab': {
@@ -177,14 +171,14 @@ async function init () {
   }
 }
 
-function filterItems (item) {
+function filterItems(item) {
   if (item.title === 'StackBlitz' && !hasPackageJson) {
     return false;
   }
   return (!options || options[item.name]) && item.platforms.includes(platform);
 }
 
-function addGitHubSelectMenu () {
+function addGitHubSelectMenu() {
   const menuElement = document.querySelector('#repo-content-turbo-frame .file-navigation');
   if (!menuElement || menuElement.querySelector('#open-in-web-ide')) {
     return;
@@ -214,7 +208,7 @@ function addGitHubSelectMenu () {
   menuElement.appendChild(detailsElement);
 }
 
-function addGitLabSelectMenu () {
+function addGitLabSelectMenu() {
   const webIDEDropdown = document.querySelector('.tree-controls .gl-new-dropdown .dropdown-menu .gl-new-dropdown-contents');
   if (!webIDEDropdown || document.querySelector('#open-in-web-ide')) {
     return;
@@ -231,5 +225,19 @@ function addGitLabSelectMenu () {
   webIDEDropdown.innerHTML = gitLabHtml;
 }
 
-window.onload = init;
-init();
+function getRepoUrlPath() {
+  return location.pathname.split('/').slice(1, 3).join('/');
+}
+
+function chromeTabUrlUpdateListener() {
+  chrome.runtime.onMessage.addListener(function (request, _, sendResponse) {
+    if (request.message === 'URL_CHANGED') {
+      repoUrlPath = getRepoUrlPath();
+      init();
+    }
+    sendResponse();
+    return true;
+  });
+}
+
+chromeTabUrlUpdateListener()
