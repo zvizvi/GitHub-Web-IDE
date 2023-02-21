@@ -194,6 +194,10 @@ function addGitHubSelectMenu () {
   if (!menuElement || menuElement.querySelector('#open-in-web-ide')) {
     return;
   }
+  
+  if (!menuElement.className.includes('d-flex')) {
+    menuElement.className += ' d-flex flex-items-start';
+  }
 
   const githubHtml = `<summary role="button" type="button" class="btn ml-2">
     <span class="d-none d-md-flex flex-items-center">
