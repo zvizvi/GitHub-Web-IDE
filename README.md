@@ -21,7 +21,7 @@ Services currently supported:
 * [Glitch](https://glitch.com/)
 * [Sourcegraph](https://sourcegraph.com/)
 * [Active Forks](https://techgaun.github.io/active-forks/)
-* [Gitpop2](https://gitpop2.herokuapp.com/)
+* [Gitpop2](https://gitpop2.vercel.app/)
 * [GitHub Memory](https://githubmemory.com/)
 * Clone in VSCode (locally)
 

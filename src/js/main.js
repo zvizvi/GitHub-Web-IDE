@@ -93,7 +93,7 @@ const ideWebsitesList = [
   {
     title: 'Gitpop2',
     name: 'gitpop2',
-    baseurl: 'http://gitpop2.herokuapp.com/',
+    baseurl: 'https://gitpop2.vercel.app/',
     platforms: ['github'],
     openInNewTab: true,
     icon: '<svg width="16" height="16" viewBox="0 0 1024 1536" style="vertical-align:sub" class="mr-2"><path fill="var(--color-fg-default)" d="M288 1344q0-40-28-68t-68-28t-68 28t-28 68t28 68t68 28t68-28t28-68zm0-1152q0-40-28-68t-68-28t-68 28t-28 68t28 68t68 28t68-28t28-68zm640 128q0-40-28-68t-68-28t-68 28t-28 68t28 68t68 28t68-28t28-68zm96 0q0 52-26 96.5T928 486q-2 287-226 414q-67 38-203 81q-128 40-169.5 71T288 1152v26q44 25 70 69.5t26 96.5q0 80-56 136t-136 56t-136-56t-56-136q0-52 26-96.5t70-69.5V358q-44-25-70-69.5T0 192q0-80 56-136T192 0t136 56t56 136q0 52-26 96.5T288 358v497q54-26 154-57q55-17 87.5-29.5t70.5-31t59-39.5t40.5-51t28-69.5T736 486q-44-25-70-69.5T640 320q0-80 56-136t136-56t136 56t56 136z"></path></svg>'
