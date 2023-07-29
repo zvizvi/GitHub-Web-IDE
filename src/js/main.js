@@ -180,7 +180,7 @@ function filterItems (item) {
 }
 
 function addGitHubSelectMenu () {
-  const menuElement = document.querySelector('#repo-content-turbo-frame .file-navigation');
+  const menuElement = document.querySelector('#repository-details-container,.file-navigation');
   if (!menuElement || menuElement.querySelector('#open-in-web-ide')) {
     return;
   }
