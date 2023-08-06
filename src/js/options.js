@@ -15,6 +15,7 @@ const defaultOptions = {
   gitpop2: false,
   gitHubMemory: false,
   cloneInVSCode: true,
+  cloneInVSCodeInsiders: false,
   openInNewTab: true
 };
 let options = { ...defaultOptions };
