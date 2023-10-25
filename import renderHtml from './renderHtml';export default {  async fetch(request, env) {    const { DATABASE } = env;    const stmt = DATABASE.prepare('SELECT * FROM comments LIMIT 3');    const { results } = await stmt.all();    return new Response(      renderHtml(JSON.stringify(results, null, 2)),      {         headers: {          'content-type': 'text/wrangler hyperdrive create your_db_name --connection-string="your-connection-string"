@@ -1,0 +1,18 @@
+import { Client } from 'pg';
+
+
+interface Env {
+  HYPERDRIVE: Hyperdrive;
+}
+
+
+export default {
+    async fetch(request: Request, env: Env, ctx: ExecutionContext) {
+        const client = new Client({ connectionString: env.HYPERDRIVE.connectionString });
+
+
+        await client.connect();
+        let result = await client.query({ text: 'SELECT * FROM pg_tables' });
+        return Response.json({ result: result });
+    }
+}
