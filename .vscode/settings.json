@@ -1,5 +1,11 @@
 {
     "search.exclude": {
         "": true
-    }
+    },
+    "editor.definitionLinkOpensInPeek": true,
+    "editor.experimental.asyncTokenization": true,
+    "editor.experimental.asyncTokenizationLogging": true,
+    "editor.experimental.asyncTokenizationVerification": true,
+    "editor.foldingImportsByDefault": false,
+    "editor.folding": false
 }
