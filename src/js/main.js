@@ -146,7 +146,7 @@ let repoUrlPath = getRepoUrlPath();
 const hasPackageJson = [...document.querySelectorAll('.Details > .js-active-navigation-container > .Box-row a.js-navigation-open')].some((el) => el.innerText === 'package.json');
 
 let options;
-async function init () {
+async function init() {
   const storage = await chrome.storage.sync.get('options');
   options = storage.options || defaultOptions;
 
@@ -177,11 +177,11 @@ async function init () {
   }
 }
 
-function getRepoUrlPath () {
+function getRepoUrlPath() {
   return location.pathname.split('/').slice(1, 3).join('/');
 }
 
-function filterItems (item) {
+function filterItems(item) {
   if (item.title === 'StackBlitz' && !hasPackageJson) {
     return false;
   }
@@ -189,12 +189,12 @@ function filterItems (item) {
 }
 
 function addGitHubSelectMenu () {
-  const menuElement = document.querySelector('#repo-content-turbo-frame .file-navigation');
+  const menuElement = document.querySelector('.bWpuBf');
   if (!menuElement || menuElement.querySelector('#open-in-web-ide')) {
     return;
   }
 
-  const githubHtml = `<summary role="button" type="button" class="btn ml-2">
+  const githubHtml = `<summary role="button" type="button" class="btn">
     <span class="d-none d-md-flex flex-items-center">
       Open In Web IDE
       <span class="dropdown-caret ml-1"></span>
@@ -218,7 +218,7 @@ function addGitHubSelectMenu () {
   menuElement.appendChild(detailsElement);
 }
 
-function addGitLabSelectMenu () {
+function addGitLabSelectMenu() {
   const webIDEDropdown = document.querySelector('.tree-controls .gl-new-dropdown .dropdown-menu .gl-new-dropdown-contents');
   if (!webIDEDropdown || document.querySelector('#open-in-web-ide')) {
     return;
