@@ -189,12 +189,12 @@ function filterItems(item) {
 }
 
 function addGitHubSelectMenu () {
-  const menuElement = document.querySelector('.bWpuBf');
+  const menuElement = document.querySelector('.bWpuBf ,.file-navigation');
   if (!menuElement || menuElement.querySelector('#open-in-web-ide')) {
     return;
   }
 
-  const githubHtml = `<summary role="button" type="button" class="btn">
+  const githubHtml = `<summary role="button" type="button" class="btn ${menuElement.classList.contains('file-navigation') ? 'ml-2' : ''}">
     <span class="d-none d-md-flex flex-items-center">
       Open In Web IDE
       <span class="dropdown-caret ml-1"></span>
