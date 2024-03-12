@@ -13,7 +13,6 @@ const defaultOptions = {
   sourcegraph: true,
   activeForks: false,
   gitpop2: false,
-  gitHubMemory: false,
   cloneInVSCode: true,
   cloneInVSCodeInsiders: false,
   openInNewTab: true

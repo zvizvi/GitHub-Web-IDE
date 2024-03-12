@@ -99,14 +99,6 @@ const ideWebsitesList = [
     icon: '<svg width="16" height="16" viewBox="0 0 1024 1536" style="vertical-align:sub" class="mr-2"><path fill="var(--color-fg-default)" d="M288 1344q0-40-28-68t-68-28t-68 28t-28 68t28 68t68 28t68-28t28-68zm0-1152q0-40-28-68t-68-28t-68 28t-28 68t28 68t68 28t68-28t28-68zm640 128q0-40-28-68t-68-28t-68 28t-28 68t28 68t68 28t68-28t28-68zm96 0q0 52-26 96.5T928 486q-2 287-226 414q-67 38-203 81q-128 40-169.5 71T288 1152v26q44 25 70 69.5t26 96.5q0 80-56 136t-136 56t-136-56t-56-136q0-52 26-96.5t70-69.5V358q-44-25-70-69.5T0 192q0-80 56-136T192 0t136 56t56 136q0 52-26 96.5T288 358v497q54-26 154-57q55-17 87.5-29.5t70.5-31t59-39.5t40.5-51t28-69.5T736 486q-44-25-70-69.5T640 320q0-80 56-136t136-56t136 56t56 136z"></path></svg>'
   },
   {
-    title: 'GitHub Memory',
-    name: 'gitHubMemory',
-    baseurl: 'https://githubmemory.com/repo/',
-    platforms: ['github'],
-    openInNewTab: true,
-    icon: '<svg width="16" height="16" viewBox="0 0 29 29" style="vertical-align:sub" class="mr-2"><g fill="none" fill-rule="evenodd"><g fill="var(--color-fg-default)"><path d="M4.608 6.721l3.798 3.799a1.948 1.948 0 01-2.754 2.754L1.853 9.476A1.948 1.948 0 014.608 6.72zm8.023 8.024l8.086 8.085a1.948 1.948 0 11-2.755 2.754L9.877 17.5a1.948 1.948 0 012.754-2.754z"/><path d="M2.755 6.22L24.105.836a2.057 2.057 0 012.483 1.433 1.94 1.94 0 01-1.392 2.411l-21.35 5.385a2.057 2.057 0 01-2.483-1.434 1.94 1.94 0 011.392-2.41z"/><path d="M17.384 23.604l5.385-21.35A1.94 1.94 0 0125.179.86a2.057 2.057 0 011.434 2.483l-5.384 21.35a1.94 1.94 0 01-2.411 1.392 2.057 2.057 0 01-1.434-2.482z"/></g><path fill="var(--color-fg-default)" d="M16.541 13.778l-7.63 7.631a2.015 2.015 0 11-2.85-2.849l7.631-7.63a2.015 2.015 0 112.85 2.848zm-11.43 11.43l-1.108 1.109a2.015 2.015 0 11-2.85-2.85l1.11-1.108a2.015 2.015 0 112.848 2.85z"/></g></svg>'
-  },
-  {
     title: 'Clone in VSCode',
     name: 'cloneInVSCode',
     baseurl: `vscode://vscode.git/clone?url=https://${platform}.com/`,
@@ -136,7 +128,6 @@ const defaultOptions = {
   sourcegraph: true,
   activeForks: false,
   gitpop2: false,
-  gitHubMemory: false,
   cloneInVSCode: true,
   cloneInVSCodeInsiders: false,
   openInNewTab: true
