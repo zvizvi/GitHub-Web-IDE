@@ -152,8 +152,7 @@ async function init () {
 
   switch (platform) {
     case 'github': {
-      const itemWithBorderOnTop = ideWebsitesList.find( // first item only
-        (item) => (item.name === 'cloneInVSCode') && filterItems(item));
+      const itemWithBorderOnTop = ideWebsitesList.find((item) => (item.name.startsWith('cloneInVSCode')) && filterItems(item));
       if (itemWithBorderOnTop) {
         itemWithBorderOnTop.class += ' border-top';
       }
@@ -189,17 +188,20 @@ function filterItems (item) {
 }
 
 function addGitHubSelectMenu () {
-  const menuElement = document.querySelector('#repo-content-turbo-frame .file-navigation');
+  const menuElement = document.querySelector('.bWpuBf, .gtBUEp .d-flex.gap-2');
   if (!menuElement || menuElement.querySelector('#open-in-web-ide')) {
     return;
   }
 
-  const githubHtml = `<summary role="button" type="button" class="btn ml-2">
-    <span class="d-none d-md-flex flex-items-center">
+  const githubHtml = `<summary role="button" type="button" class="btn">
+    <span class="d-none d-xl-flex flex-items-center">
       Open In Web IDE
       <span class="dropdown-caret ml-1"></span>
     </span>
-    <span class="d-inline-block d-md-none">IDE</span>
+    <span class="d-inline-block d-xl-none">
+      IDE
+      <span class="dropdown-caret ml-1 d-none d-sm-inline-block d-md-none d-lg-inline-block"></span>
+    </span>
   </summary>
   <div>
     <ul class="dropdown-menu dropdown-menu-sw" style="min-width:170px;width:auto">
