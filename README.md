@@ -27,9 +27,15 @@ Services currently supported:
 
 
 ### What's changed?
+* v2.0.4
+  * Fix compatibility with the new GitHub design.
+  * Add VSCode Insiders option (Thanks to @JMcrafter26).
+  * Remove the VSCode Remote Repositories option as it no longer works.
+  * Remove the GitHub Memory option as it no longer works.
+  * CodeSandbox and Replit new logos corrected
 * v2.0.3 Bug fixed
 * v2.0.2 GitLab1s link added
-* v2.0.1 Open in VSCodeDev option
+* v2.0.1 Open in VSCode Dev option
 * v2.0.0
   * Extension customizing options page.
   * ~Open in VSCode Remote Repositories option.~
