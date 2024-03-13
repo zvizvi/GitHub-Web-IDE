@@ -68,7 +68,7 @@ NPM packages file explorer, like
 ### Download
 
 #### Chrome
-https://chrome.google.com/webstore/detail/adjiklnjodbiaioggfpbpkhbfcnhgkfe
+https://chromewebstore.google.com/detail/adjiklnjodbiaioggfpbpkhbfcnhgkfe
 #### Firefox
 https://addons.mozilla.org/firefox/addon/github-web-ide
 #### Edge
@@ -80,7 +80,7 @@ https://microsoftedge.microsoft.com/addons/detail/akjbkjciknacicbnkfjbnlaeednpad
 [![get-edge-addon][edge_badge]][edge_link]
 
 
-[chrome_link]: https://chrome.google.com/webstore/detail/adjiklnjodbiaioggfpbpkhbfcnhgkfe
+[chrome_link]: https://chromewebstore.google.com/detail/adjiklnjodbiaioggfpbpkhbfcnhgkfe
 [chrome_badge]: https://user-images.githubusercontent.com/4354421/107861086-06778c80-6e4c-11eb-8072-f82422193a70.png
 [firefox_link]: https://addons.mozilla.org/firefox/addon/github-web-ide
 [firefox_badge]: https://user-images.githubusercontent.com/4354421/108622754-82249b00-7443-11eb-914d-387b3977923c.png
