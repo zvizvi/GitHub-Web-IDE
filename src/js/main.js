@@ -179,7 +179,12 @@ function filterItems (item) {
 }
 
 function addGitHubSelectMenu () {
-  const menuElement = document.querySelector('.bWpuBf, .gtBUEp .d-flex.gap-2');
+  const selectors = [
+    '.bWpuBf', // Repo main page
+    '.gtBUEp .d-flex.gap-2', // Repo files page
+    '.eoBUzL .iUzEGj' // Commits page
+  ];
+  const menuElement = document.querySelector(selectors.join(', '));
   if (!menuElement || menuElement.querySelector('#open-in-web-ide')) {
     return;
   }
@@ -204,8 +209,9 @@ function addGitHubSelectMenu () {
   </div> `;
 
   const detailsElement = document.createElement('details');
-  detailsElement.setAttribute('class', 'details-overlay details-reset position-relative d-block');
   detailsElement.setAttribute('id', 'open-in-web-ide');
+  detailsElement.setAttribute('class', 'details-overlay details-reset position-relative d-block');
+  detailsElement.setAttribute('style', 'order: 10;');
   detailsElement.innerHTML = githubHtml;
 
   menuElement.appendChild(detailsElement);
