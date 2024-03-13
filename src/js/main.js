@@ -149,7 +149,7 @@ async function init () {
       }
 
       addGitHubSelectMenu();
-      document.addEventListener('soft-nav:success', () => {
+      document.addEventListener('soft-nav:end', () => {
         document.getElementById('open-in-web-ide')?.remove();
         repoUrlPath = getRepoUrlPath();
         addGitHubSelectMenu();
