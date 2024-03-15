@@ -28,10 +28,9 @@ const load = async function () {
 
 // Save options to storage
 const save = async function (object = options) {
-  if (!Object.keys(object).some((key) => key !== 'openInNewTab' && options[key])) {
+  if (!Object.keys(object).some((key) => options[key])) {
     object = {
-      gitHubDev: true,
-      openInNewTab: object.openInNewTab
+      gitHubDev: true
     };
   }
 

@@ -27,6 +27,7 @@ Services currently supported:
 
 
 ### What's changed?
+* v2.0.5 Gitlab new design compatibility
 * v2.0.4
   * Fix compatibility with the new GitHub design.
   * Add VSCode Insiders option (Thanks to @JMcrafter26).
