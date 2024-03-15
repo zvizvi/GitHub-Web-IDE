@@ -62,7 +62,7 @@ const ideWebsitesList = [
     title: 'Gitpod',
     name: 'gitpod',
     baseurl: `https://gitpod.io/#https://${platform}.com/`,
-    platforms: ['github', 'gitlab'],
+    platforms: ['github'],
     openInNewTab: true,
     icon: '<svg width="16" height="16" viewBox="0 0 32 32"><path fill="var(--color-fg-default)" d="M18.748 1.594a3.16 3.16 0 01-1.178 4.313l-9.437 5.387a.8.8 0 00-.403.695v8.456a.8.8 0 00.403.695l7.47 4.264a.8.8 0 00.794 0l7.47-4.264a.8.8 0 00.403-.695v-5.259l-6.715 3.785a3.167 3.167 0 01-4.312-1.2 3.16 3.16 0 011.202-4.308l9.607-5.415c2.927-1.65 6.548.463 6.548 3.82v9.22a6.016 6.016 0 01-3.035 5.224l-8.576 4.895a6.03 6.03 0 01-5.978 0l-8.576-4.895A6.016 6.016 0 011.4 21.087v-9.74a6.016 6.016 0 013.035-5.225L14.43.417a3.167 3.167 0 014.318 1.177z"/></svg>'
   },
@@ -158,7 +158,6 @@ async function init () {
     }
     case 'gitlab': {
       addGitLabSelectMenu();
-      localStorage.setItem('gl-web-ide-button-selected', 'webide');
       break;
     }
     default: {
@@ -218,20 +217,20 @@ function addGitHubSelectMenu () {
 }
 
 function addGitLabSelectMenu () {
-  const webIDEDropdown = document.querySelector('.tree-controls .gl-new-dropdown .dropdown-menu .gl-new-dropdown-contents');
+  const webIDEDropdown = document.querySelector('.tree-controls .gl-new-dropdown-panel .gl-new-dropdown-inner .edit-dropdown-group-width ul');
   if (!webIDEDropdown || document.querySelector('#open-in-web-ide')) {
     return;
   }
 
   const gitLabHtml = `${ideWebsitesList.filter(filterItems).map((item) =>
-    `<li data-toggle-for="open-in-web-ide"><a href="${item.baseurl}${repoUrlPath}" class="dropdown-item" target="_blank">
-      ${item.icon}
-      ${item.title}
-    </a></li>`).join('')}`;
+    `<li tabindex="0" data-testid="gitpod-menu-item" class="gl-new-dropdown-item"><a href="${item.baseurl}${repoUrlPath}" class="gl-new-dropdown-item-content" target="_blank">
+      <span class="gl-new-dropdown-item-text-wrapper"><div class="gl-display-flex gl-flex-direction-column"><span class="gl-display-flex gl-justify-content-space-between gl-align-items-center gl-mb-2"><span data-testid="action-primary-text" class="gl-font-weight-bold">
+        ${item.title}
+      </span>
+    </div></span></a></li>`).join('')}`;
 
   webIDEDropdown.setAttribute('id', 'open-in-web-ide');
-  webIDEDropdown.setAttribute('style', '--color-fg-default: currentColor');
-  webIDEDropdown.innerHTML = gitLabHtml;
+  webIDEDropdown.innerHTML += gitLabHtml;
 }
 
 window.onload = init;
