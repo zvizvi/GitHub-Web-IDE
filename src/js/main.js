@@ -122,9 +122,13 @@ const defaultOptions = {
 };
 
 let repoUrlPath = getRepoUrlPath();
-const hasPackageJson = [...document.querySelectorAll('.Details > .js-active-navigation-container > .Box-row a.js-navigation-open')].some((el) => el.innerText === 'package.json');
-
 let options;
+
+function hasPackageJsonCheck () {
+  return [...document.querySelectorAll('.Layout-main .Box-sc-g0xbh4-0 .react-directory-filename-column .react-directory-truncate .Link--primary')].some((el) => el.innerText === 'package.json');
+}
+let hasPackageJson = hasPackageJsonCheck();
+
 async function init () {
   const storage = await chrome.storage.sync.get('options');
   options = storage.options || defaultOptions;
@@ -159,6 +163,7 @@ function getRepoUrlPath () {
 }
 
 function filterItems (item) {
+  hasPackageJson ||= hasPackageJsonCheck(); // recheck after navigation
   if (item.title === 'StackBlitz' && !hasPackageJson) {
     return false;
   }
