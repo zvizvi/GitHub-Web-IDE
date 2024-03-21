@@ -7,7 +7,7 @@
 [![GitHub Release](https://img.shields.io/github/v/release/zvizvi/GitHub-Web-IDE.svg)][release_link]
 
 
-This extension adds to any GitHub repository a new drop down menu which offers links to a number of online services that allow viewing the source code of the repository in an IDE like interface.
+This extension enhances GitHub repositories by adding a convenient dropdown menu. This menu offers direct links to various online platforms that allow users to view and interact with the repository's source code in an environment reminiscent of an IDE.
 Services currently supported:
 
 * [GitHub Dev](https://github.dev/)
