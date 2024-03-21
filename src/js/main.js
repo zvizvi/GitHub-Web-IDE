@@ -120,6 +120,21 @@ const defaultOptions = {
   cloneInVSCodeInsiders: false,
   openInNewTab: true
 };
+const gitHubStyle = `
+.eIgvIk {
+  position: relative;
+  z-index: 2;
+}
+#open-in-web-ide {
+  order: 10;
+}
+#open-in-web-ide .dropdown-menu {
+  min-width: 170px;
+  width: auto;
+}
+#open-in-web-ide .dropdown-menu .dropdown-item .d-inline-flex {
+  vertical-align:sub;
+}`;
 
 let repoUrlPath = getRepoUrlPath();
 let options;
@@ -192,9 +207,9 @@ function addGitHubSelectMenu () {
     </span>
   </summary>
   <div>
-    <ul class="dropdown-menu dropdown-menu-sw" style="min-width:170px;width:auto">
-      ${ideWebsitesList.filter(filterItems).map((item) => `<li class="${item.class || ''}" data-toggle-for="open-in-web-ide"><a href="${item.baseurl}${repoUrlPath}" class="dropdown-item" ${(!options || options.openInNewTab) ? 'target="_blank"' : ''} rel="noopener noreferrer">
-        <span class="d-inline-flex mr-2" style="vertical-align:sub;">${item.icon}</span>
+    <ul class="dropdown-menu dropdown-menu-sw">
+      ${ideWebsitesList.filter(filterItems).map((item) => `<li class="${item.class || ''}"><a href="${item.baseurl}${repoUrlPath}" class="dropdown-item" ${(!options || options.openInNewTab) ? 'target="_blank"' : ''} rel="noopener noreferrer">
+        <span class="d-inline-flex mr-2">${item.icon}</span>
         ${item.title}
       </a></li>`).join('')}
     </ul>
@@ -203,10 +218,15 @@ function addGitHubSelectMenu () {
   const detailsElement = document.createElement('details');
   detailsElement.setAttribute('id', 'open-in-web-ide');
   detailsElement.setAttribute('class', 'details-overlay details-reset position-relative d-block');
-  detailsElement.setAttribute('style', 'order: 10;');
   detailsElement.innerHTML = githubHtml;
-
   menuElement.appendChild(detailsElement);
+
+  if (!document.head.querySelector('style[data-id="open-in-web-ide-css"]')) {
+    const globalStyle = document.createElement('style');
+    globalStyle.dataset.id = 'open-in-web-ide-css';
+    globalStyle.innerHTML = gitHubStyle;
+    document.head.appendChild(globalStyle);
+  }
 }
 
 function addGitLabSelectMenu () {
