@@ -8,6 +8,7 @@
 
 
 This extension enhances GitHub repositories by adding a convenient dropdown menu. This menu offers direct links to various online platforms that allow users to view and interact with the repository's source code in an environment reminiscent of an IDE.
+
 Services currently supported:
 
 * [GitHub Dev](https://github.dev/)
@@ -27,6 +28,7 @@ Services currently supported:
 
 
 ### What's changed?
+* v2.0.6 Style improvements
 * v2.0.5 Gitlab new design compatibility
 * v2.0.4
   * Fix compatibility with the new GitHub design.
