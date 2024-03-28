@@ -12,6 +12,7 @@ const defaultOptions = {
   glitch: true,
   sourcegraph: true,
   activeForks: false,
+  usefulForks: false,
   gitpop2: false,
   cloneInVSCode: true,
   cloneInVSCodeInsiders: false,
