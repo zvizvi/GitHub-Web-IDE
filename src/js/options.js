@@ -11,6 +11,7 @@ const defaultOptions = {
   gitpod: true,
   glitch: true,
   sourcegraph: true,
+  jsDelivr: false,
   activeForks: false,
   usefulForks: false,
   gitpop2: false,
