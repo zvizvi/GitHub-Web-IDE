@@ -21,30 +21,38 @@ Services currently supported:
 * [StackBlitz](https://stackblitz.com/)
 * [Glitch](https://glitch.com/)
 * [Sourcegraph](https://sourcegraph.com/)
+* [JsDelivr](https://www.jsdelivr.com/)
 * [Active Forks](https://techgaun.github.io/active-forks/)
+* [Useful Forks](https://useful-forks.github.io/)
 * [Gitpop2](https://gitpop2.vercel.app/)
+* [DevPod](https://devpod.sh/)
 * Clone in VSCode (locally)
 * Clone in VSCode Insiders (locally)
 
 
 ### What's changed?
-* v2.0.6 Style improvements
-* v2.0.5 Gitlab new design compatibility
+* v2.0.7
+  * Fix extension options page in Firefox.
+  * Add Useful Forks link.
+  * Add JsDelivr link (disabled by default).
+  * Add DevPod (disabled by default).
+* v2.0.6 Style improvements.
+* v2.0.5 GitLab new design compatibility.
 * v2.0.4
   * Fix compatibility with the new GitHub design.
   * Add VSCode Insiders option (Thanks to @JMcrafter26).
   * Remove the VSCode Remote Repositories option as it no longer works.
   * Remove the GitHub Memory option as it no longer works.
-  * CodeSandbox and Replit new logos corrected
-* v2.0.3 Bug fixed
-* v2.0.2 GitLab1s link added
-* v2.0.1 Open in VSCode Dev option
+  * CodeSandbox and Replit new logos corrected.
+* v2.0.3 Bug fixed.
+* v2.0.2 GitLab1s link added.
+* v2.0.1 Open in VSCode Dev option.
 * v2.0.0
   * Extension customizing options page.
   * ~Open in VSCode Remote Repositories option.~
   * Active Forks (disabled by default).
   * Gitpop2 (disabled by default).
-  * ~GitHub Memory (disabled by default)~.
+  * ~GitHub Memory (disabled by default).~
 * v1.0.16 Style changes and improvements.
 * v1.0.15 GitHub Dev link added.
 * v1.0.14 Open in VSCode option added (open.vscode.dev).
