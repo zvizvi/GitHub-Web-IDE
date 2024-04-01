@@ -94,6 +94,13 @@ const ideWebsitesList = [
     icon: '<svg width="16" height="16" viewBox="0 0 1024 1536"><path fill="currentColor" d="M288 1344q0-40-28-68t-68-28t-68 28t-28 68t28 68t68 28t68-28t28-68zm0-1152q0-40-28-68t-68-28t-68 28t-28 68t28 68t68 28t68-28t28-68zm640 128q0-40-28-68t-68-28t-68 28t-28 68t28 68t68 28t68-28t28-68zm96 0q0 52-26 96.5T928 486q-2 287-226 414q-67 38-203 81q-128 40-169.5 71T288 1152v26q44 25 70 69.5t26 96.5q0 80-56 136t-136 56t-136-56t-56-136q0-52 26-96.5t70-69.5V358q-44-25-70-69.5T0 192q0-80 56-136T192 0t136 56t56 136q0 52-26 96.5T288 358v497q54-26 154-57q55-17 87.5-29.5t70.5-31t59-39.5t40.5-51t28-69.5T736 486q-44-25-70-69.5T640 320q0-80 56-136t136-56t136 56t56 136z"></path></svg>'
   },
   {
+    title: 'DevPod',
+    name: 'devPod',
+    baseurl: `https://devpod.sh/open#https://${platform}.com/`,
+    platforms: ['github', 'gitlab'],
+    icon: '<svg width="16" height="16" viewBox="0 0 200 200"><g style="scale:1.0376"><polygon fill="currentColor" points="67.4,147.6 144.4,3.1 117,3.1 52.9,123.4 39.5,99.2 66.2,51.1 39.5,51.1 12.8,99.2 39.5,147.3 40.2,147.3 40,147.6"></polygon><polygon fill="currentColor" points="157.3,51.7 156.7,51.7 156.8,51.4 129.4,51.4 52.4,195.9 79.8,195.9 143.9,75.6 157.3,99.8 130.6,147.9 157.3,147.9 184,99.8"></polygon></g></svg>'
+  },
+  {
     title: 'Clone in VSCode',
     name: 'cloneInVSCode',
     baseurl: `vscode://vscode.git/clone?url=https://${platform}.com/`,
@@ -124,6 +131,7 @@ const defaultOptions = {
   activeForks: false,
   usefulForks: false,
   gitpop2: false,
+  devPod: false,
   cloneInVSCode: true,
   cloneInVSCodeInsiders: false,
   openInNewTab: true

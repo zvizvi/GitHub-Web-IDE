@@ -14,6 +14,7 @@ const defaultOptions = {
   activeForks: false,
   usefulForks: false,
   gitpop2: false,
+  devPod: false,
   cloneInVSCode: true,
   cloneInVSCodeInsiders: false,
   openInNewTab: true
