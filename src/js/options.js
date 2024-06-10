@@ -10,6 +10,7 @@ const defaultOptions = {
   stackBlitz: true,
   gitpod: true,
   glitch: true,
+  idx: true,
   sourcegraph: true,
   jsDelivr: false,
   activeForks: false,

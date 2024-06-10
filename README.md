@@ -20,6 +20,7 @@ Services currently supported:
 * [Gitpod](https://gitpod.io/)
 * [StackBlitz](https://stackblitz.com/)
 * [Glitch](https://glitch.com/)
+* [Google IDX](https://idx.google.com/)
 * [Sourcegraph](https://sourcegraph.com/)
 * [JsDelivr](https://www.jsdelivr.com/)
 * [Active Forks](https://techgaun.github.io/active-forks/)
@@ -31,6 +32,7 @@ Services currently supported:
 
 
 ### What's changed?
+* v2.0.8 Google IDX link added.
 * v2.0.7
   * Fix extension options page in Firefox.
   * Add Useful Forks link.
