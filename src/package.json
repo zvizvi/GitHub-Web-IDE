@@ -1,6 +1,6 @@
 {
   "name": "github-web-ide",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "description": "⚡ Open GitHub repositories in online web IDE",
   "main": "README.md",
   "dependencies": {

@@ -4,7 +4,7 @@
   "manifest_version": 3,
   "update_url": "https://clients2.google.com/service/update2/crx",
   "homepage_url": "https://github.com/zvizvi/GitHub-Web-IDE",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "author": "zvizvi5@outlook.com",
   "action": {
     "default_icon": {

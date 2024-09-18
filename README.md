@@ -32,6 +32,7 @@ Services currently supported:
 
 
 ### What's changed?
+* v2.0.9 Bug fixes and improvements.
 * v2.0.8 Google IDX link added.
 * v2.0.7
   * Fix extension options page in Firefox.
