@@ -18,6 +18,7 @@ const defaultOptions = {
   gitpop2: false,
   devPod: false,
   cloneInVSCode: true,
+  cloneInCursor: true,
   cloneInVSCodeInsiders: false,
   openInNewTab: true
 };
