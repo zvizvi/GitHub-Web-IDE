@@ -126,7 +126,7 @@ const ideWebsitesList = [
   {
     title: 'Clone in Cursor',
     name: 'cloneInCursor',
-    baseurl: `Cursor://vscode.git/clone?url=https://${platform}.com/`,
+    baseurl: `cursor://vscode.git/clone?url=https://${platform}.com/`,
     platforms: ['github'],
     icon: '<svg width="16" height="16" viewBox="0 0 256 256"><path fill="currentColor" d="M216.001 216c-22.091 0-40-17.909-40-40 0-22.092 17.909-40 40-40 22.092 0 40 17.908 40 40 0 22.091-17.908 40-40 40zm-80-80c-22.091 0-40-17.909-40-40 0-22.092 17.909-40 40-40 22.092 0 40 17.908 40 40 0 22.091-17.908 40-40 40zm-80 80c-22.091 0-40-17.909-40-40 0-22.092 17.909-40 40-40 22.092 0 40 17.908 40 40 0 22.091-17.908 40-40 40z"/></svg>',
     class: 'd-none d-md-block'
