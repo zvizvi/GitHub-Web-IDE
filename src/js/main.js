@@ -130,6 +130,14 @@ const ideWebsitesList = [
     platforms: ['github'],
     icon: '<svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/></svg>',
     class: 'd-none d-md-block'
+  },
+  {
+    title: 'Clone in Windsurf',
+    name: 'cloneInWindsurf',
+    baseurl: `windsurf://vscode.git/clone?url=https://${platform}.com/`,
+    platforms: ['github'],
+    icon: '<svg width="16" height="16" viewBox="0 0 437 437" fill="none"><g><path fill="currentColor" d="M158.309 214.284L131.411 138.69C129.028 131.994 133.837 124.892 140.697 125.099C278.395 129.254 349.252 175.962 342.826 317.442C320.038 221.089 210.738 214.284 158.309 214.284Z"></path><path fill="currentColor" d="M122.985 93.3443L94.8059 19.6265C92.2327 12.895 97.0462 5.59333 104.008 5.66145C243.358 7.02518 341.655 11.8665 341.655 195.334C318.866 98.9808 175.414 93.3443 122.985 93.3443Z"></path><path fill="currentColor" d="M194.533 339.095L165.956 258.985C163.58 252.325 168.349 245.242 175.175 245.441C288.752 248.761 345.762 294.023 339.378 434.585C316.589 338.232 247.34 339.095 194.533 339.095Z"></path></g></svg>',
+    class: 'd-none d-md-block'
   }
 ];
 const defaultOptions = {
@@ -151,6 +159,7 @@ const defaultOptions = {
   devPod: false,
   cloneInVSCode: true,
   cloneInVSCodeInsiders: false,
+  cloneInWindsurf: false,
   openInNewTab: true
 };
 const gitHubStyle = `
