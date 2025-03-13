@@ -29,6 +29,8 @@ Services currently supported:
 * [DevPod](https://devpod.sh/)
 * Clone in VSCode (locally)
 * Clone in VSCode Insiders (locally)
+* Clone in Cursor (locally)
+* Clone in Windsurf (locally)
 
 
 ### What's changed?
