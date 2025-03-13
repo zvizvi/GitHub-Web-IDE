@@ -19,6 +19,7 @@ const defaultOptions = {
   devPod: false,
   cloneInVSCode: true,
   cloneInVSCodeInsiders: false,
+  cloneInCursor: false,
   cloneInWindsurf: false,
   openInNewTab: true
 };
