@@ -31,6 +31,7 @@ Services currently supported:
 * Clone in VSCode Insiders (locally)
 * Clone in Cursor (locally)
 * Clone in Windsurf (locally)
+* Clone in Windsurf Next (locally)
 
 
 ### What's changed?
