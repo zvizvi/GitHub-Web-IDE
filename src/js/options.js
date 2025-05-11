@@ -21,6 +21,7 @@ const defaultOptions = {
   cloneInVSCodeInsiders: false,
   cloneInCursor: false,
   cloneInWindsurf: false,
+  cloneInWindsurfNext: false,
   openInNewTab: true
 };
 let options = { ...defaultOptions };
