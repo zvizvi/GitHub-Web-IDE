@@ -246,12 +246,12 @@ function filterItems (item) {
 }
 
 function addGitHubSelectMenu () {
-  const selectors = [
+ // const selectors = [
     '.jxTzTd', // Repo main page
     '.faNtbn .d-flex.gap-2', // Repo files page
     '.gwHaUx .d-flex.gap-2' // Commits page
   ];
-  const menuElement = document.querySelector(selectors.join(', '));
+  const menuElement = document.querySelector('.react-directory-add-file-icon')?.parentElement?.parentElement
   if (!menuElement || menuElement.querySelector('#open-in-web-ide')) {
     return;
   }
