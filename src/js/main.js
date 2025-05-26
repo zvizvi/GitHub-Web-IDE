@@ -181,10 +181,6 @@ const defaultOptions = {
   openInNewTab: true
 };
 const gitHubStyle = `
-.eIgvIk {
-  position: relative;
-  z-index: 2;
-}
 #open-in-web-ide {
   order: 10;
 }
@@ -247,9 +243,9 @@ function filterItems (item) {
 
 function addGitHubSelectMenu () {
   const selectors = [
-    '.jxTzTd', // Repo main page
-    '.faNtbn .d-flex.gap-2', // Repo files page
-    '.gwHaUx .d-flex.gap-2' // Commits page
+    '.OverviewContent-module__Box_6--wV7Tw', // Repo main page
+    '.CodeViewHeader-module__Box_7--FZfkg .d-flex.gap-2', // Repo files page
+    '.prc-Stack-Stack-WJVsK .d-flex.gap-2' // Commits page
   ];
   const menuElement = document.querySelector(selectors.join(', '));
   if (!menuElement || menuElement.querySelector('#open-in-web-ide')) {
