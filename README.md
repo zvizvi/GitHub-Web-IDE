@@ -35,6 +35,9 @@ Services currently supported:
 
 
 ### What's changed?
+* v2.0.11
+  * Add Clone in Windsurf Next option.
+  * Fix selectors for GitHub new design.
 * v2.0.10 Add Clone in Cursor and Windsurf options.
 * v2.0.9 Bug fixes and improvements.
 * v2.0.8 Google IDX link added.
