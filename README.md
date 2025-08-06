@@ -21,7 +21,6 @@ Services currently supported:
 * [StackBlitz](https://stackblitz.com/)
 * [Glitch](https://glitch.com/)
 * [Google IDX](https://idx.google.com/)
-* [Sourcegraph](https://sourcegraph.com/)
 * [JsDelivr](https://www.jsdelivr.com/)
 * [Active Forks](https://techgaun.github.io/active-forks/)
 * [Useful Forks](https://useful-forks.github.io/)
@@ -32,9 +31,13 @@ Services currently supported:
 * Clone in Cursor (locally)
 * Clone in Windsurf (locally)
 * Clone in Windsurf Next (locally)
+* Clone in Kiro (locally)
 
 
 ### What's changed?
+* v2.0.12
+  * Add Clone in Kiro option.
+  * Remove Sourcegraph option as it no longer works. 
 * v2.0.11
   * Add Clone in Windsurf Next option.
   * Fix selectors for GitHub new design.
@@ -71,7 +74,7 @@ Services currently supported:
 * v1.0.11 Dark mode support.
 * v1.0.10 Open current selected branch.
 * v1.0.8 GitLab support, Glitch link added.
-* v1.0.7 Sourcegraph link added.
+* v1.0.7 ~Sourcegraph link added.~
 * v1.0.4 Clone in VSCode option added.
 
 ### ToDo:

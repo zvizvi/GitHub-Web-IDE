@@ -11,7 +11,6 @@ const defaultOptions = {
   gitpod: true,
   glitch: true,
   idx: true,
-  sourcegraph: true,
   jsDelivr: false,
   activeForks: false,
   usefulForks: false,
@@ -22,6 +21,7 @@ const defaultOptions = {
   cloneInCursor: false,
   cloneInWindsurf: false,
   cloneInWindsurfNext: false,
+  cloneInKiro: false,
   openInNewTab: true
 };
 let options = { ...defaultOptions };
