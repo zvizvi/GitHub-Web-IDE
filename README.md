@@ -35,9 +35,11 @@ Services currently supported:
 
 
 ### What's changed?
+* v2.0.13
+  * Fix GitHub slectors.
 * v2.0.12
   * Add Clone in Kiro option.
-  * Remove Sourcegraph option as it no longer works. 
+  * Remove Sourcegraph option as it no longer works.
 * v2.0.11
   * Add Clone in Windsurf Next option.
   * Fix selectors for GitHub new design.
