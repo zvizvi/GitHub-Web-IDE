@@ -35,8 +35,8 @@ Services currently supported:
 
 
 ### What's changed?
-* v2.0.13
-  * Fix GitHub slectors.
+* v2.0.14 Styles fix for settings page.
+* v2.0.13 Fix GitHub selectors.
 * v2.0.12
   * Add Clone in Kiro option.
   * Remove Sourcegraph option as it no longer works.
