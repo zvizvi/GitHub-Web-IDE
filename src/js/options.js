@@ -89,10 +89,9 @@ const reset = async function () {
 };
 
 // On reset button clicked
-document.addEventListener('click', async (event) => {
-  if (event.target.id === 'reset-button') {
-    await reset();
-  }
+document.getElementById('reset-button').addEventListener('click', async () => {
+  await reset();
 });
 
-load();
+// Initialize
+document.addEventListener('DOMContentLoaded', load);
