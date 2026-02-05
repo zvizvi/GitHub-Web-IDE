@@ -244,8 +244,8 @@ function filterItems (item) {
 
 function addGitHubSelectMenu () {
   const selectors = [
-    '.OverviewContent-module__Box_6--tJpBe', // Repo main page
-    '.CodeViewHeader-module__Box_1--aCFlZ .d-flex.gap-2', // Repo files page
+    '.OverviewContent-module__Box_6___4QI5Pq', // Repo main page
+    '.CodeViewHeader-module__Box_7__GuOdVSR .d-flex.gap-2', // Repo files page
     '.prc-Stack-Stack-UQ9k6 .d-flex.gap-2' // Commits page
   ];
   const menuElement = document.querySelector(selectors.join(', '));
