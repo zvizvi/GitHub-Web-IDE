@@ -9,7 +9,6 @@ const defaultOptions = {
   replit: true,
   stackBlitz: true,
   gitpod: true,
-  glitch: true,
   idx: true,
   jsDelivr: false,
   activeForks: false,

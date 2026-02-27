@@ -19,7 +19,6 @@ Services currently supported:
 * [Repl.it](https://replit.com/)
 * [Gitpod](https://gitpod.io/)
 * [StackBlitz](https://stackblitz.com/)
-* [Glitch](https://glitch.com/)
 * [Google IDX](https://idx.google.com/)
 * [JsDelivr](https://www.jsdelivr.com/)
 * [Active Forks](https://techgaun.github.io/active-forks/)
