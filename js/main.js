@@ -291,9 +291,9 @@ async function updateRepoSize(elementId) {
 
 function addGitHubSelectMenu () {
   const selectors = [
-    '.OverviewContent-module__Box_6__Y_Yb_', // Repo main page
-    '.CodeViewHeader-module__Box_7___0R6c .d-flex.gap-2', // Repo files page
-    '.prc-Stack-Stack-UQ9k6 .d-flex.flex-sm-row.gap-2' // Commits page
+    '.OverviewContent-module__Box_6--tJpBe', // Repo main page
+    '.CodeViewHeader-module__Box_1--aCFlZ .d-flex.gap-2', // Repo files page
+    '.prc-Stack-Stack-UQ9k6 .d-flex.gap-2' // Commits page
   ];
   const menuElement = document.querySelector(selectors.join(', '));
   if (!menuElement || menuElement.querySelector('#open-in-web-ide')) {
