@@ -18,6 +18,7 @@ const defaultOptions = {
   cloneInVSCode: true,
   cloneInVSCodeInsiders: false,
   cloneInCursor: false,
+  cloneInZed: false,
   cloneInWindsurf: false,
   cloneInWindsurfNext: false,
   cloneInKiro: false,

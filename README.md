@@ -28,12 +28,15 @@ Services currently supported:
 * Clone in VSCode (locally)
 * Clone in VSCode Insiders (locally)
 * Clone in Cursor (locally)
+* Clone in Zed (locally)
 * Clone in Windsurf (locally)
 * Clone in Windsurf Next (locally)
 * Clone in Kiro (locally)
 
 
 ### What's changed?
+* v2.0.16 Add Clone in Zed option.
+* v2.0.15 Remove Glitch.
 * v2.0.14 Styles fix for settings page.
 * v2.0.13 Fix GitHub selectors.
 * v2.0.12
