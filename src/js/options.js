@@ -9,7 +9,6 @@ const defaultOptions = {
   replit: true,
   stackBlitz: true,
   gitpod: true,
-  glitch: true,
   idx: true,
   jsDelivr: true,
   activeForks: true,
@@ -17,11 +16,11 @@ const defaultOptions = {
   gitpop2: true,
   devPod: true,
   cloneInVSCode: true,
-  cloneInVSCodeInsiders: true,
-  cloneInCursor: true,
-  cloneInWindsurf: true,
-  cloneInWindsurfNext: true,
-  cloneInKiro: true,
+  cloneInVSCodeInsiders: false,
+  cloneInCursor: false,
+  cloneInWindsurf: false,
+  cloneInWindsurfNext: false,
+  cloneInKiro: false,
   openInNewTab: true
 };
 let options = { ...defaultOptions };
