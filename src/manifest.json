@@ -5,7 +5,7 @@
   "update_url": "https://clients2.google.com/service/update2/crx",
   "homepage_url": "https://github.com/zvizvi/GitHub-Web-IDE",
   "version": "2.0.16",
-  "author": "zvizvi5@outlook.com",
+  "author": "candacemarieh@gmail.com",
   "action": {
     "default_icon": {
       "16": "img/icon16.png",
@@ -23,9 +23,9 @@
   },
   "content_scripts": [
     {
-      "all_frames": false,
+      "all_frames": true,
       "matches": [
-        "https://github.com/*",
+        "https://github.com/canmarha",
         "https://gitlab.com/*"
       ],
       "js": [

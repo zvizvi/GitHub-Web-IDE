@@ -1,0 +1,11 @@
+{
+    "IDX.aI.showChatInEditorTab": true,
+    "IDX.agenticWorkspace": true,
+    "java.maven.downloadSources": true,
+    "java.eclipse.downloadSources": true,
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "rust-analyzer.completion.privateEditable.enable": true
+}
