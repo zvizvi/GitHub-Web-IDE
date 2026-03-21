@@ -16,11 +16,12 @@ const defaultOptions = {
   gitpop2: true,
   devPod: true,
   cloneInVSCode: true,
-  cloneInVSCodeInsiders: false,
-  cloneInCursor: false,
-  cloneInWindsurf: false,
-  cloneInWindsurfNext: false,
-  cloneInKiro: false,
+  cloneInVSCodeInsiders: true,
+  cloneInCursor: true,
+  cloneInZed: false,
+  cloneInWindsurf: true,
+  cloneInWindsurfNext: true,
+  cloneInKiro: true,
   openInNewTab: true
 };
 let options = { ...defaultOptions };
